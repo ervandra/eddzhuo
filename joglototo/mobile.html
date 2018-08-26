@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Joglototo</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app-mobile.css">
+  <script>
+
+      var data = sessionStorage.getItem('session');
+      if (data !== null || data === "1") {
+        window.location = "index.html"
+      }
+  </script>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header-marquee marquee-keluaran">
+      <marquee behavior="" direction="">
+        <span id="keluaran" style="white-space:nowrap">
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">HK SIANG </span>
+            <span style="color:#CCC">26/8 </span>
+            <strong>0658</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">SYDNEY </span>
+            <span style="color:#CCC">25/8 </span>
+            <strong>2912</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">MALAYSIA SIANG </span>
+            <span style="color:#CCC">25/8 </span>
+            <strong>8575</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">SINGAPORE </span>
+            <span style="color:#CCC">25/8 </span>
+            <strong>6002</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">SINGAPORE 45 </span>
+            <span style="color:#CCC">23/8 </span>
+            <strong>9483</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">GEYLANG </span>
+            <span style="color:#CCC">24/8 </span>
+            <strong>1831</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">MALAYSIA </span>
+            <span style="color:#CCC">25/8 </span>
+            <strong>2386</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">MACAU </span>
+            <span style="color:#CCC">25/8 </span>
+            <strong>2513</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">QATAR </span>
+            <span style="color:#CCC">25/8 </span>
+            <strong>6978</strong>
+          </span>
+          <span style="margin-left:30px;">
+            <span style="color:#FC0;">HONGKONG </span>
+            <span style="color:#CCC">25/8 </span>
+            <strong>3644</strong>
+          </span>
+          <div style="clear:both"></div>
+        </span>
+      </marquee>
+    </div>
+    <div class="header-marquee marquee-broadcast">
+      <marquee behavior="" direction="">
+        <span id="broadcast" style="white-space:nowrap">Link alternatif: www.joglo1.com , www.joglo2.com | Versi Mobile: m.joglo1.com , m.joglo2.com | Versi WAP: wap.joglo1.com
+          , wap.joglo2.com</span>
+      </marquee>
+    </div>
+    <div class="logo">
+      <span class="logo-text">Mobile Version</span>
+      <img src="images/logo-mobile.png" alt="">
+    </div>
+  </header>
+
+  <section id="content">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <div class="panel">
+            <h1>Login</h1>
+            <form action="#">
+              <input type="text" id="username" name="username" placeholder="Username">
+              <input type="password" id="password" name="password" placeholder="Password">
+              <div class="image-captcha">
+                <img src="http://m.joglototo.com/capimg.php" alt="captcha">
+              </div>
+              <input type="text" id="captcha" name="captcha" placeholder="Verifikasi">
+              <button type="submit" class="button alert large">Login</button>
+              <a href="#" class="button register secondary">Register</a>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <div class="pindah-versi">
+            <h3>Pindah ke versi</h3>
+            <a href="#" class="button secondary" onclick="sessionStorage.setItem('session', '1'); window.location='index.html'">Desktop</a>
+          </div>
+          <div class="footer-copyright">
+            © 2016 - 2018 Copyright JogloToto. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app-mobile.js"></script>
+</body>
+
+</html>

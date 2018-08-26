@@ -1,0 +1,393 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Joglototo</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script>
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      var data = sessionStorage.getItem('session');
+      if(data===null || data==="0"){
+        window.location = "mobile.html"
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <div class="navigation">
+            <div class="logo">
+              <a href="#">
+                <img src="images/logo.png" alt="LOGO">
+              </a>
+            </div>
+            <div class="top-menu">
+              <div class="login-widget">
+                <form action="#">
+                  <div class="flex-container align-right align-middle">
+                    <input type="text" name="username" id="username" placeholder="Username" />
+                    <input type="password" name="password" id="password" placeholder="Password" />
+                    <div class="image-captcha">
+                      <img src="http://www.joglo1.com/capimg.php" alt="CAPTCHA">
+                    </div>
+                    <input type="text" name="captcha" id="captcha" placeholder="" />
+                    <button type="submit" class="button alert">Login</button>
+                  </div>
+                </form>
+              </div>
+              <nav id="mainmenu">
+                <ul>
+                  <li>
+                    <a href="#">Beranda</a>
+                  </li>
+                  <li>
+                    <a href="#">Peraturan</a>
+                    <ul>
+                      <li>
+                        <a href="#">Sub menu 1</a>
+                      </li>
+                      <li>
+                        <a href="#">Sub menu 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Sub menu 3</a>
+                      </li>
+                      <li>
+                        <a href="#">Sub menu 4</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Bantuan & Pertanyaan</a>
+                  </li>
+                  <li>
+                    <a href="#">Buku Mimpi</a>
+                  </li>
+                  <li>
+                    <a href="#">Register</a>
+                  </li>
+                  <li>
+                    <a href="#">Promo</a>
+                  </li>
+                  <li>
+                    <a href="#" class="button">Peringkat</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="content">
+    <div id="banner">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <div class="banner-container">
+              <div class="banner-decorator"></div>
+              <div class="banner-links" id="banner-register">
+                <a href="#">
+                  <img src="images/daftar.png" alt="">
+                </a>
+              </div>
+              <div class="banner-links" id="banner-wap">
+                <a href="#">
+                  <img src="images/wap.png" alt="">
+                </a>
+              </div>
+              <div class="orbit" role="region" aria-label="Slideshow" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+                <div class="orbit-wrapper">
+                  <ul class="orbit-container">
+                    <li class="is-active orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/slider1.jpg" alt="Slide 1">
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/slider2.jpg" alt="Slide 2">
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/slider3.jpg" alt="Slide 3">
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="maincontent">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <div class="home-content">
+              <div class="grid-x grid-margin-x">
+                <div class="cell small-3 medium-3">
+                  <div class="sidebar" id="data-pasaran">
+                    <table width="190" style="background:none; margin-left:7px; margin-top:9px">
+                      <tbody>
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('HKD','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">HK SIANG</span>
+                            <br>
+                            <span style="font-size:9px">Minggu, 26-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">0658</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('SYD','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">SYDNEY</span>
+                            <br>
+                            <span style="font-size:9px">Sabtu, 25-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">2912</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('MYD','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">MALAYSIA SIANG</span>
+                            <br>
+                            <span style="font-size:9px">Sabtu, 25-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">8575</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('SG','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">SINGAPORE</span>
+                            <br>
+                            <span style="font-size:9px">Sabtu, 25-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">6002</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('SG45','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">SINGAPORE 45</span>
+                            <br>
+                            <span style="font-size:9px">Kamis, 23-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">9483</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('GY','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">GEYLANG</span>
+                            <br>
+                            <span style="font-size:9px">Jumat, 24-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">1831</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('MY','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">MALAYSIA</span>
+                            <br>
+                            <span style="font-size:9px">Sabtu, 25-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">2386</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('MC','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">MACAU</span>
+                            <br>
+                            <span style="font-size:9px">Sabtu, 25-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">2513</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('QTR','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">QATAR</span>
+                            <br>
+                            <span style="font-size:9px">Sabtu, 25-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">6978</td>
+                        </tr>
+
+                        <tr style="height:26px">
+                          <td valign="bottom" style="vertical-align:top; width:23px;">
+                            <a href="javascript:resultData('HK','1')">
+                              <img src="images/dots.png" width="15" height="14" alt="">
+                            </a>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; line-height:11px">
+                            <span style="font-size:11px; font-weight:bold">HONGKONG</span>
+                            <br>
+                            <span style="font-size:9px">Sabtu, 25-8-2018</span>
+                          </td>
+                          <td valign="top" style="color:#f2d17b; font-size:18px;font-weight:bold">3644</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="cell small-9 medium-9">
+                  <div class="newsticker">
+                    <h5>News</h5>
+                    <marquee behavior="" direction="">Link alternatif: www.joglo1.com , www.joglo2.com | Versi Mobile: m.joglo1.com , m.joglo2.com | Versi
+                      WAP: wap.joglo1.com , wap.joglo2.com</marquee>
+                  </div>
+
+                  <div class="grid-x grid-margin-x align-stretch">
+                    <div class="cell small-8 medium-8">
+                      <div class="transaction-history">
+                        <div class="transaction withdraw">
+                          <h3>Penarikan Terakhir</h3>
+
+                          <marquee behavior="" direction="">| XXXjaya66 50,000 | XXXatma 100,000 | XXXbrong 200,000 | XXXgsingojagoan 1,300,000 | XXXM134NX
+                            105,000 | XXXatma 50,000</marquee>
+
+                        </div>
+                        <div class="transaction deposit">
+                          <h3>Deposit Terakhir</h3>
+
+                          <marquee behavior="" direction="">| XXXjaya66 50,000 | XXXatma 100,000 | XXXbrong 200,000 | XXXgsingojagoan 1,300,000 | XXXM134NX
+                            105,000 | XXXatma 50,000</marquee>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cell small-4 medium-4">
+                      <div class="sidebar" id="bank-status">
+                        <h5>Status Bank</h5>
+                        <ul>
+                          <li>
+                            <span class="bank-name">BCA</span>
+                            <span class="bank-status">Online</span>
+                          </li>
+                          <li>
+                            <span class="bank-name">Mandiri</span>
+                            <span class="bank-status">Online</span>
+                          </li>
+                          <li>
+                            <span class="bank-name">BNI</span>
+                            <span class="bank-status">Online</span>
+                          </li>
+                          <li>
+                            <span class="bank-name">BRI</span>
+                            <span class="bank-status">Online</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+
+          <div class="footer-contact">
+            <img src="images/bbm.png" alt="" style=" margin-right:10px; vertical-align:bottom">
+            <strong style="font-size:16px">7B254CF5</strong>
+            <img src="images/wa.png" alt="" style="margin-left:20px; margin-right:10px; vertical-align:bottom">
+            <strong style="font-size:16px">+639958819291</strong>
+            <img src="images/wechat.png" alt="" style="margin-left:20px; margin-right:10px; vertical-align:bottom">
+            <strong style="font-size:16px">cs_joglo</strong>
+            <img src="images/line.png" alt="" style="margin-left:20px; margin-right:10px; vertical-align:bottom">
+            <strong style="font-size:16px">cs.joglo</strong>
+
+            <a href="https://facebook.com/joglototo" target="_blank">
+              <img src="images/fb.png" alt="" style="margin-left:20px; margin-right:10px; vertical-align:bottom">
+              <strong style="font-size:16px">JogloToto</strong>
+            </a>
+            <img src="images/skype.png" alt="" style="margin-left:20px; margin-right:10px; vertical-align:bottom">
+            <strong style="font-size:16px">joglototo</strong>
+          </div>
+
+          <div class="footer-copyright text-center">
+              © 2015-2018 Copyright JogloToto. All Rights Reserved. | <a href="#" onclick="sessionStorage.removeItem('session'); window.location = mobile.html">Mobile Version</a>
+          </div>
+
+          <div class="footer-payment text-center">
+            <img src="images/footer.png" alt="FOOTER Payment">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
