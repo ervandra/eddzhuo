@@ -400,6 +400,9 @@ hr {
 .about-content ol li {
 	font-size: 0.875rem;
 }
+.metode-pembayaran {
+	margin-bottom:2rem;
+}
 .scrolltop {
 	display: block;
 	margin: 0 auto;
