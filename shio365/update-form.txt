@@ -1,0 +1,83 @@
+<style>
+
+
+
+.nav-tabs { display:flex; align-items:center; margin:0 0 1rem; padding:0;}
+.nav-tabs li { display:block; margin:0 0 1rem !important;}
+.nav-tabs #tab_dashboard { display:none;}
+.nav-tabs li a { display: block; text-align: center; font-weight:normal; color:#333}
+
+.nav-tabs li a span.glyphicon { display:block; width:54px; height:54px; margin:0 auto .5rem; border:1px solid #e3e3e3; transition:all ease-in-out .3s; position: relative; border-radius:30rem;}
+#p_losangels { background:url(../images/los-angeles.png) no-repeat center; background-size:cover;}
+#p_sidney { background:url(../images/sidney.png) no-repeat center; background-size:cover;}
+#p_dallas { background:url(../images/dallas.png) no-repeat center; background-size:cover;}
+#p_hokkian { background:url(../images/hokkian.png) no-repeat center; background-size:cover;}
+#p_singapore { background:url(../images/singapore.png) no-repeat center; background-size:cover;}
+#p_dili { background:url(../images/dili.png) no-repeat center; background-size:cover;}
+#p_zurich { background:url(../images/zurich.png) no-repeat center; background-size:cover;}
+#p_taipei { background:url(../images/taipei.png) no-repeat center; background-size:cover;}
+#p_zurich { background:url(../images/zurich.png) no-repeat center; background-size:cover;}
+#p_hongkong { background:url(../images/hongkong.png) no-repeat center; background-size:cover;}
+#p_oslo { background:url(../images/oslo.png) no-repeat center; background-size:cover;}
+
+.nav-tabs li a:hover span.glyphicon, .nav-tabs li a:focus span.glyphicon { background:#62c462; box-shadow:0 1px 15px 1px rgba(69,65,78,.3)}
+.nav-tabs li a:hover span.glyphicon:after, .nav-tabs li.active a span.glyphicon:after  { background:#62c462; content:"\f00c"; font-family: "FontAwesome"; width:20px; height:20px; display:block; position:absolute; right:0; top:0; border-radius:50%;line-height:20px; text-align:center;color:#fff;}
+.nav-tabs li.inactive a span.glyphicon { filter:grayscale(100); opacity: .5;}
+.nav-tabs li.inactive.active a span.glyphicon { filter:grayscale(0); opacity: 1;}
+
+.tab-pane { display:none;}
+.tab-pane.active { display:block;}
+
+.well { background:none; border:none; border-radius:0; text-align: left; line-height: 1.4; padding:0; margin:0 !important;}
+.tab-pane > div { display:flex; justify-content: space-between; margin-bottom:1rem;}
+.tab-pane .col-md-2 { width:240px; min-width:240px; flex-shrink: 1;}
+.tab-pane .col-md-10 { width:auto; flex: 1 1 auto; padding-left:1rem }
+.tab-pane h5 { font-weight:bold; margin:0; padding: 1rem; background:#0092a4; color:#fff; margin:0; border-radius:8px 8px 0 0;}
+.tab-pane h5:before { content:'\f1b3'; font-family: "FontAwesome"; display:inline-block; margin-right:.75rem;}
+.tab-pane .col-md-2 > div { margin:0 !important; padding:0 !important;}
+.tab-pane .col-md-2 > div > .well h5 { background:#5da423; color:#fff; border-radius:8px; text-align: left; margin:0 0 1.5rem;}
+.tab-pane .col-md-2 > div > .well h5:before { content:"\f024";}
+
+.tab-pane .btn { display:block; width:100%; padding:0 1rem; line-height:36px; height:36px; text-align: left; background:rgba(0, 146, 164,.1); border-radius:0; cursor: pointer; font-size:.75rem; border:none; border-radius:4px; margin-bottom:0; border:1px solid rgba(0, 146, 164,.5); color:#666; box-shadow:0 1px 3px 0px rgba(69,65,78,.3)}
+
+.tab-pane .btn:hover, .tab-pane .btn:focus { background:rgba(255, 174, 0,.6); color:#333 ; border:1px solid rgba(255, 174, 0,1); box-shadow:0 1px 12px 0px rgba(69,65,78,.3)}
+
+.panel-heading { margin-bottom:0; font-size:1rem; line-height: 48px; padding:0 1rem; background:#666; font-size:.875rem; border-radius:8px 8px 0 0; color:#fff}
+table thead th, table thead td, table tfoot th, table tfoot td { font-size:.875rem;}
+
+.tab-pane .btn.btn-success { float:right; border:none; background:#5da423; color:#fff; margin:0 0 1rem; text-align: center; margin:0rem 0 2.5rem !important; padding:0 1rem; text-transform: uppercase; font-size:1rem}
+.well.totalBet { float:left; margin:0rem 0 2.5rem !important; line-height:36px;}
+
+.well h5 + .row { padding:1rem; border:1px solid #ddd; border-top:none; margin-bottom:1.5rem; border-radius:0 0 8px 8px;}
+.well .row .col-md-12 + .col-md-12 { margin-top:1rem;}
+
+.panel.peraturanContainer { background:#efefef; padding:1rem;}
+.panel.peraturanContainer .panel-heading { border-radius:8px; margin-bottom:1.5rem}
+.panel-body form:after { display:table; clear:both; content:"";}
+.panel-body form .clearfix { display:none;}
+
+.formContainer { padding:0 1rem}
+
+@media only screen and (max-width:40em){
+
+  .nav-tabs { flex-wrap:wrap; justify-content: flex-start}
+  .nav-tabs li { width: auto !important; flex:1; white-space: nowrap; min-width:84px;}
+  .nav-tabs li + li { margin-left:1rem;}
+  
+  .tab-pane > div { display:block;}
+  .tab-pane .col-md-2 { width:100%; min-width:0; flex-shrink: 0; padding:0 !important;}
+  .tab-pane .col-md-10 { width:100%; flex: 1 1 100%; padding-left:0 }
+  
+
+
+  .well h5 + .row { padding:.5rem 0; display:flex; flex-wrap:wrap; margin-bottom:1rem}
+  .well .row .col-md-12 {  flex:1; padding:.5rem}
+  .well .row .col-md-12 + .col-md-12 { margin:0;}
+  .tab-pane .btn { text-align: center; white-space: nowrap;}
+
+  .formContainer { padding:0;}
+  .panel-body { overflow: hidden; overflow-x:auto;}
+  .panel-body table tr td { white-space: nowrap}
+}
+
+</style>

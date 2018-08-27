@@ -1,0 +1,41 @@
+<!-- level 1 -->
+<ul class="vertical tabs" data-tabs data-tabs-1 id="game-tabs"></ul>
+
+<!-- level 2 (nested) -->
+<ul class="tabs tabs-capsule" data-tabs data-tabs-2 id="game4d-tabs"></ul>
+
+<script>
+
+  $('[data-tabs-1]').find('li > a').each(function (el) {
+    var $href = $(this).attr('href');
+    $(this).on('click', function (e) {
+      var $id = $('[data-tabs-1]').attr('id');
+      e.preventDefault();
+      $('[data-tabs-1] li').removeClass('is-active');
+      $('[data-tabs-1] li > a').attr('aria-selected', false)
+      $('[data-tabs-1] li:nth-child(' + (el + 1) + ')').addClass('is-active');
+      $('[data-tabs-1] li:nth-child(' + (el + 1) + ') > a').attr('aria-selected', true)
+
+      $('[data-tabs-content="' + $id + '"] > .tabs-panel').removeClass('is-active');
+      $('[data-tabs-content="' + $id + '"]').find($href).addClass('is-active');
+
+    })
+  })
+
+  $('[data-tabs-2]').find('li > a').each(function (el) {
+    var $href = $(this).attr('href');
+    $(this).on('click', function (e) {
+      var $id = $('[data-tabs-2]').attr('id');
+      e.preventDefault();
+      $('[data-tabs-2] li').removeClass('is-active');
+      $('[data-tabs-2] li > a').attr('aria-selected', false)
+      $('[data-tabs-2] li:nth-child(' + (el + 1) + ')').addClass('is-active');
+      $('[data-tabs-2] li:nth-child(' + (el + 1) + ') > a').attr('aria-selected', true)
+
+      $('[data-tabs-content="' + $id + '"] > .tabs-panel').removeClass('is-active');
+      $('[data-tabs-content="' + $id + '"]').find($href).addClass('is-active');
+
+    })
+  })
+
+</script>

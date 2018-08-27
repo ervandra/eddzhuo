@@ -1,0 +1,50 @@
+<style>
+
+.nav-tabs { display:flex; align-items:center; margin:0 0 1rem; padding:0;}
+.nav-tabs li { display:block; margin:0 0 1rem !important;}
+.nav-tabs #tab_dashboard { display:none;}
+.nav-tabs li a { display: block; text-align: center; font-weight:normal; color:#333}
+
+.nav-tabs li a span.glyphicon { display:block; width:54px; height:54px; margin:0 auto .5rem; border:1px solid #e3e3e3; transition:all ease-in-out .3s; position: relative; border-radius:30rem;}
+#p_losangels { background:url(../images/los-angeles.png) no-repeat center; background-size:cover;}
+#p_sidney { background:url(../images/sidney.png) no-repeat center; background-size:cover;}
+#p_dallas { background:url(../images/dallas.png) no-repeat center; background-size:cover;}
+#p_hokkian { background:url(../images/hokkian.png) no-repeat center; background-size:cover;}
+#p_singapore { background:url(../images/singapore.png) no-repeat center; background-size:cover;}
+#p_dili { background:url(../images/dili.png) no-repeat center; background-size:cover;}
+#p_zurich { background:url(../images/zurich.png) no-repeat center; background-size:cover;}
+#p_taipei { background:url(../images/taipei.png) no-repeat center; background-size:cover;}
+#p_zurich { background:url(../images/zurich.png) no-repeat center; background-size:cover;}
+#p_hongkong { background:url(../images/hongkong.png) no-repeat center; background-size:cover;}
+#p_oslo { background:url(../images/oslo.png) no-repeat center; background-size:cover;}
+
+.nav-tabs li a:hover span.glyphicon, .nav-tabs li a:focus span.glyphicon { background:#62c462; box-shadow:0 1px 15px 1px rgba(69,65,78,.3)}
+.nav-tabs li a:hover span.glyphicon:after, .nav-tabs li.active a span.glyphicon:after  { background:#62c462; content:"\f00c"; font-family: "FontAwesome"; width:20px; height:20px; display:block; position:absolute; right:0; top:0; border-radius:50%;line-height:20px; text-align:center;color:#fff;}
+.nav-tabs li.inactive a span.glyphicon { filter:grayscale(100); opacity: .5;}
+.nav-tabs li.inactive.active a span.glyphicon { filter:grayscale(0); opacity: 1;}
+
+.tab-pane { display:none;}
+.tab-pane.active { display:block;}
+
+</style>
+
+<div class="tab-pane-wrapper">
+  <div id="losangels_wrap" class="tab-pane fade in">
+    <!-- isi blabla -->
+  </div>
+  <div id="sidney_wrap" class="tab-pane fade in">
+    <!-- isi blabla -->
+  </div>
+</div>
+
+<script>
+  $('.nav-tabs li a').on('click', function(e){
+    e.preventDefault();
+    var $href = $(this).attr('href');
+    $('.nav-tabs li').removeClass('active').removeClass('inactive');
+    $('.nav-tabs li').addClass('inactive');
+    $(this).parent().addClass('active');
+    $('.tab-pane').removeClass('active');
+    $($href).addClass('active');
+  })
+</script>
