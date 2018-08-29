@@ -339,3 +339,27 @@ h6 {
 	text-align: center;
 	line-height: 1.4;
 }
+
+#content {
+	color:#fff;
+}
+
+#maincontent{
+	padding:2rem 0;
+}
+#maincontent .article {
+	padding:2rem 2rem 1rem;
+	border:1px solid #333;
+	border-radius:8px;
+	margin-bottom:1rem;
+	background:#111;
+	color:#fff;
+}
+#maincontent h1, #maincontent h2, #maincontent h3, #maincontent h4, #maincontent h5, #maincontent h6 {
+	font-size:1rem;
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+}
+#maincontent p, #maincontent ul li, #maincontent ol li {
+	font-size:.875rem;
+}
