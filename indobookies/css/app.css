@@ -363,3 +363,48 @@ h6 {
 #maincontent p, #maincontent ul li, #maincontent ol li {
 	font-size:.875rem;
 }
+.news-list {
+	margin-bottom:2rem;
+}
+.news {
+	display:flex;
+}
+.news .news-img {
+	flex-shrink:0;
+}
+.news .news-img img {
+	width:200px;
+}
+.news .news-content {
+	flex:1;
+	padding:0 1rem;
+}
+.news .news-content .button {
+	font-size:.625rem;
+	margin:0;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+#maincontent .news .news-content h3 {
+	font-size:1rem; margin:0 0 1rem;
+}
+#maincontent .news .news-content p {
+	font-size:.875rem; line-height: 1.4;
+}
+.news + .news { 
+	margin-top:1rem; padding-top:1rem;
+	border-top:1px solid #333;
+}
+
+.pagination {
+	padding-top:1rem;
+	border-top:1px solid #333;
+	text-align:center;
+	color:#fff;
+}
+.pagination a {
+	color:#fff;
+}
+.pagination a:hover, .pagination a:focus {
+	color:#333;
+}
