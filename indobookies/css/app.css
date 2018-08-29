@@ -1,6 +1,7 @@
 body {
 	font-family: 'gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
 		'Helvetica Neue', sans-serif;
+		background:#000
 }
 h1,
 h2,
@@ -181,7 +182,160 @@ h6 {
 }
 
 .slide { 
-  padding:2rem 0;
-  min-height:700px;
+  padding:2rem 0 0;
+	min-height:500px;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: stretch;
+	text-align: center
 }
-.slide {}
+.slide .slide-container {
+	height:500px;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: stretch;
+}
+.slide img { max-height: 500px; margin:0 auto}
+
+#how-to-play h3 {
+	color:#fff;
+	font-size:.875rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-align: center;
+	margin:0 0 1rem;
+	padding:.75rem 1rem;
+	background: #ff0054;
+	background: -moz-linear-gradient(left, #ff0054 0%, #8f0067 100%);
+	background: -webkit-linear-gradient(left, #ff0054 0%, #8f0067 100%);
+	background: linear-gradient(to right, #ff0054 0%, #8f0067 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0054', endColorstr='#8f0067',GradientType=1 );
+}
+
+.play-steps { 
+	padding:1rem 0;
+}
+.play-step { position: relative;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.play-step h5 {
+	margin:0 0 .5rem;
+	font-size:1.5rem;
+	color:#5dc6cc;
+	font-weight:normal;
+	text-transform: uppercase	
+}
+.play-step p {
+	color:#fff;
+	text-transform: uppercase;
+	font-size:.75rem;
+	line-height: 1.2;	
+	margin-bottom:1.5rem;
+}
+.play-step .image-module { 
+	height:260px;
+	position: relative;
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition:all ease .3s;
+}
+.play-step .image-module a {
+	position:absolute;
+	z-index:5;
+	text-indent: -9999px;
+	top:0; right:0; bottom:0; left:0;
+}
+.play-step .img-1 {
+	background-image:url(../images/promo-blue-1.png);
+}
+.play-step .img-1:hover, .play-step .img-1:focus {
+	background-image:url(../images/promo-purple-1.png);
+}
+.play-step .img-2 {
+	background-image:url(../images/promo-blue-2.png);
+}
+.play-step .img-2:hover, .play-step .img-2:focus {
+	background-image:url(../images/promo-purple-2.png);
+}
+.play-step .img-3 {
+	background-image:url(../images/promo-blue-3.png);
+}
+.play-step .img-3:hover, .play-step .img-3:focus {
+	background-image:url(../images/promo-purple-3.png);
+}
+
+#footer { 
+	padding:1rem 0;
+	background:#000;
+	color:#fff;
+	text-align: center;
+}
+.accepted-payments {
+	margin-bottom: 2rem;
+}
+.accepted-payments h6 {
+	color:#d70062;
+	font-size:.875rem;
+	margin:0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.accepted-payments p {
+	color:#666;
+	margin-top:1rem;
+	font-size:.875rem;
+	text-transform: uppercase
+}
+.accepted-payments .button{
+	text-transform: uppercase;
+	margin:0;
+	font-size:.875rem;
+}
+.pay-bank {
+	position: relative;
+	cursor: pointer;
+}
+.pay-bank .hover-info {
+	display:none;
+	position: absolute;
+	bottom:50px;
+	left:50%;
+	transform:translateX(-50%);
+	z-index: 5;
+	border:1px solid #333;
+	background:#000;
+	text-align: center;
+	padding:.5rem;
+	width:300px;
+	font-size:.75rem;
+	border-radius:4px;
+}
+.pay-bank .hover-info:before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: black;
+	transform: translateX(-50%) rotateZ(45deg);
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	border: 1px solid #333;
+	border-left: 0;
+	border-top: 0;
+}
+.pay-bank:hover .hover-info, .pay-bank:focus .hover-info {
+	display: block;
+}
+
+.copyright {
+	color:#fff;
+	font-size:.75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.4;
+}
