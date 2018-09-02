@@ -181,24 +181,6 @@ h6 {
   background:#000 url(../images/slide-bg.png) no-repeat bottom center;
 }
 
-.slide { 
-  padding:2rem 0 0;
-	min-height:500px;
-	display:flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: stretch;
-	text-align: center
-}
-.slide .slide-container {
-	height:500px;
-	display:flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: stretch;
-}
-.slide img { max-height: 500px; margin:0 auto}
-
 #how-to-play h3 {
 	color:#fff;
 	font-size:.875rem;
