@@ -1,11 +1,22 @@
 body { font-family: "opensans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color:#fff; background:#000 url(../images/bg.jpg) no-repeat top center;}
 h1,h2,h3,h4,h5,h6 { font-family: "opensans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold;}
 
+h1 { font-size:1.5rem;}
+h2 { font-size:1.375rem;}
+h3 { font-size:1.25rem;}
+h4 { font-size:1.125rem;}
+h5 { font-size:1rem;}
+h6 { font-size:.875rem;}
+
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea, select { background-color:#3a3637; box-shadow: none !important; border-color:#3a3637; border-radius:0; height:2rem; padding:0 .5rem; line-height:2rem;  color:#fff; font-size:.75rem;}
 [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus, select:focus { background-color:#222; color:#fff;}
 
-button, .button { height:32px; line-height:30px; padding:0 1rem; font-size:.75rem; text-transform: uppercase}
+button, .button { height:32px; line-height:30px; padding:0 1rem; font-size:.75rem; text-transform: uppercase; color:#333;}
+button:hover, .button:hover, button:focus, .button:focus { color:#333;}
 button.capsule, .button.capsule { border-radius:50px; padding:0 1.5rem;}
+
+button.success, .button.success { color:#fff;}
+button.success:hover, .button.success:hover, button.success:focus, .button.success:focus { color:#fff;}
 
 .slick-prev, .slick-next { z-index:32;}
 .slick-next { right:1rem;}
@@ -126,3 +137,82 @@ ul.footer-menu li { display:block; font-size:.875rem; line-height:1;}
 ul.footer-menu li a { color:#fff;}
 ul.footer-menu li + li { padding-left:1rem; margin-left:1rem; border-left:1px solid #f5f0a9}
 .copyright { font-size:.875rem; line-height:1.5;}
+
+#maincontent.internal {
+  padding:2rem 0; 
+}
+#maincontent h1 {
+  margin:0 0 1.5em;
+  line-height: 1.2;
+  border-bottom:1px solid #f5f0a9;
+  padding-bottom:1rem;
+  text-transform: uppercase
+}
+
+.article { 
+  padding:2rem;
+  border:2px solid #f5f0a9;
+  border-radius:4px;
+  background:rgba(0,0,0,.3);
+}
+
+.news-list {
+	margin-bottom:2rem;
+}
+.news {
+	display:flex;
+}
+.news .news-img {
+	flex-shrink:0;
+}
+.news .news-img img {
+	width:200px;
+}
+.news .news-content {
+	flex:1;
+	padding:0 1rem;
+}
+.news .news-content .button {
+	font-size:.625rem;
+	margin:0;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+#maincontent .news .news-content h3 {
+	font-size:1rem; margin:0 0 1rem;
+}
+#maincontent .news .news-content p {
+	font-size:.875rem; line-height: 1.4;
+}
+.news + .news { 
+	margin-top:1rem; padding-top:1rem;
+	border-top:1px solid #999;
+}
+
+.pagination {
+	padding-top:1rem;
+	border-top:1px solid #999;
+	text-align:center;
+}
+.pagination a {
+	color:#fff;
+}
+.pagination .current, .pagination a:hover, .pagination a:focus {
+	color:#333;
+}
+
+.article p .fa { margin-right:.5rem;}
+ul.support-contact { display:flex; flex-wrap:wrap;}
+ul.support-contact li { width:50%; display:flex; align-items: center; margin-bottom:1rem; font-size:.875rem; font-weight:bold;}
+ul.support-contact li img { margin-right:.5rem;}
+ul.support-contact li a { color:#fff;}
+ul.support-contact li a:hover,ul.support-contact li a:focus { text-decoration: underline;}
+
+table, table tr, table td, table tbody { background:#000;}
+table { border:1px solid #f5f0a9; border-radius:4px; }
+table tr th, table tr td { font-size:.75rem; padding:.25rem .25rem;}
+table tr th { background:rgba(0,0,0,.5); padding:1rem .25rem; white-space: nowrap;}
+table tbody tr:nth-child(even) { background:#000;}
+table tr td { border-top:1px solid #333;}
+
+#maincontent h2 strong { color:#f5f0a9}
