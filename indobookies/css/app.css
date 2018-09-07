@@ -256,6 +256,23 @@ h6 {
 	color:#fff;
 	text-align: center;
 }
+/* updated lines for our games */
+.our-games {
+	height:49px;
+	background:url(../images/bg-gamez.png) no-repeat top center;
+	background-size:cover;
+	margin:1rem 0 3rem;
+	padding-top:.25rem;
+}
+.our-games h6 {
+	font-size:.875rem;
+	margin:0;
+	color:#5dc6cc;
+	font-weight: normal;
+}
+.our-games h6, .our-games a {
+	margin:0 .5rem;
+}
 .accepted-payments {
 	margin-bottom: 2rem;
 }
