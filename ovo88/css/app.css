@@ -443,6 +443,29 @@ hr {
 .footer-links ul li a:focus {
 	text-decoration: underline;
 }
+.footer-info {
+	padding:2rem 0;
+	border-bottom: 2px solid #554495
+}
+.footer-info h3 {
+	color:#5c6b96;
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:1.75rem;
+}
+.footer-info h5 {
+	color:#5c6b96;
+	font-size:18px;
+	font-family:"ProximaNova";
+	font-weight:normal;
+	margin:.75rem 0 .75rem;
+}
+.footer-info p {
+	color:#5c6b96;
+	font-size:12px;
+	line-height:1;
+	margin-bottom:10px;
+}
 
 .footer-partners {
 	padding: 2rem 0;
