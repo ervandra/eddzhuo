@@ -1,0 +1,378 @@
+body {
+  background: #050156;
+  color: #5c6b96;
+  font-family: "ProximaNova";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  color: #9e6760;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.375rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.125rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+.button.alert {
+  color: #fff;
+}
+.button.alert:hover,
+.button.alert:focus {
+  color: #fff;
+}
+.button.success {
+  color: #fff;
+}
+.button.success:hover,
+.button.success:focus {
+  color: #fff;
+}
+
+.grid-container,
+hr {
+  max-width: 1150px;
+}
+
+.slick-nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 30rem;
+  background: rgba(255, 255, 255, 0.3);
+  color: #333;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 93;
+  transition: all ease 0.1s;
+  cursor: pointer;
+}
+.slick-nav:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transition: all ease 0.3s;
+}
+.slick-prev {
+  left: 2rem;
+  padding-right: 4px;
+}
+.slick-next {
+  right: 2rem;
+  padding-left: 4px;
+}
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 98;
+  bottom: .75rem;
+  left: 0;
+  right: 0;
+}
+.slick-dots li {
+  display: block;
+  margin: 0 .75rem;
+}
+.slick-dots li button {
+  display: block;
+  text-indent: -9999px;
+  border-radius: 30rem;
+  width: 1rem;
+  height: 1rem;
+  background: rgba(255,255,255,.3);
+  transition: all ease .3s;
+  cursor: pointer;
+}
+.slick-dots li:hover button, .slick-dots li.slick-active button {
+  background: rgba(255,255,255,.9);
+}
+
+#header {
+
+}
+
+#header .topheader {
+  background: #050057;
+  padding: .375rem 0;
+}
+
+.topheader .site-clock {
+  color: #fff;
+}
+.topheader .site-register {
+  text-align: right;
+}
+.topheader .site-register .button {
+  margin: 0;
+  background: #b30014;
+  background: linear-gradient(#b30014, #5a0307);
+  color: #fff;
+  font-weight: 600;
+  padding: .375rem .75rem;
+  text-transform: uppercase;
+}
+
+#header .navigation {
+  background: linear-gradient(#0b00b3, #040146);
+  position: relative;
+}
+
+.mainmenu {
+  flex: 1;
+  margin-left: 1.5rem;
+}
+.mainmenu ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.mainmenu ul li {
+  margin:0;
+  padding:0;
+  display: block;
+  flex: 1 1 auto;
+}
+.mainmenu ul li a {
+  display: block;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .875rem;
+  padding: .75rem 0;
+  border: 1px solid transparent;
+  border-width: 0 1px;
+}
+.mainmenu ul li:hover > a, .mainmenu ul li.active > a {
+  background: #0b00b3;
+  border-color: #1e0241;
+  color: rgba(255,255,255,.6);
+}
+.mainmenu ul li a span {
+  display: block;
+}
+.mainmenu ul li a span.menu-image {
+  margin-bottom: .375rem;
+  height: 24px;
+}
+.mainmenu ul li a span.menu-image img {
+  max-height: 24px;
+}
+.mainmenu .submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 76px;
+  z-index: 98;
+  background:#0b00b3;
+  padding: .75rem;
+}
+.mainmenu ul li:hover > .submenu {
+  display: block;
+}
+.mainmenu ul ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.mainmenu ul ul li {
+  flex: 1 1 auto;
+}
+.mainmenu ul ul li a {
+  border: none;
+}
+.mainmenu ul ul li:hover > a {
+}
+.mainmenu ul ul li a .menu-image {
+  height: auto;
+  margin-bottom: .75rem;
+}
+.mainmenu ul ul li a .menu-image img {
+  max-height: none;
+}
+.mainmenu ul ul li a .menu-text {
+  margin-bottom: .375rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#fedf73, #e98001);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainmenu ul ul li a span.menu-link .button {
+  display: inline-block;
+  background:linear-gradient(#b30014, #5a0307);
+  padding: .375rem .75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#step {
+  padding: 3rem 0;
+}
+
+.step-container {
+  padding: .75rem 0;
+  border-radius: 6px;
+  border: 2px solid #0d02a9f2;
+  box-shadow: 0 0 5px 0px #fff;
+}
+.step-header img {
+  width: 100%;
+}
+.step-content {
+  padding: 1.5rem;
+}
+.step-item a {
+  display: block;
+  transition: all ease .3s;
+  transform-origin: 50% 50%;
+}
+.step-item a:hover {
+  transform: scale(1.1);
+}
+.step-item img {
+  width: 100%;
+}
+
+#footer {}
+
+#footer .footer-menu {
+  background: #0A02A8;
+  padding: .75rem 0;
+}
+
+.footer-menu-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.footer-menu-links li {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.footer-menu-links li + li {
+  margin-left: .75rem;
+  padding-left: .75rem;
+  border-left: 1px solid #fff;
+}
+.footer-menu-links li a {
+  color: #fff;
+}
+.footer-menu-links li a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  color: #fff;
+}
+.footer-notes {
+  background: #050156;
+  padding: 1.5rem 0;
+}
+.footer-notes h2 {
+  color:#eead33;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.footer-notes p {
+  color: #fff;
+  line-height: 1.2;
+  font-size: .875rem;
+}
+
+.footer-contact {
+  position: fixed;
+  top: 50%;
+  margin-top: -292px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  transform: translateX(-240px);
+  transition: all ease .3s;
+}
+.footer-contact.open {
+  transform: translateX(0);
+}
+
+.contact-handle {
+  order: 4;
+  cursor: pointer;
+}
+.contact-info {
+  background: #0b00b3;
+  width: 240px;
+  border: 1px solid #040146;
+  height: 584px;
+}
+.contact-header {
+  background: linear-gradient(#0b00b3, #040146);
+  padding: .75rem;
+}
+.contact-list {
+
+}
+.contact-list .contact {
+  padding: .75rem;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #040146;
+}
+.contact-list .contact img {
+  margin-right: .75rem;
+  width: 32px;
+}
+.contact-list .contact p {
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+  font-size: .875rem;
+}
+.contact-footer {
+  padding: .75rem;
+}
+.contact-footer .button {
+  margin: 0;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: .75rem .75rem;
+  background:linear-gradient(#b30014, #5a0307);
+  color: #fff;
+  font-weight: 600;
+}
+.contact-footer .button .fa {
+  margin-right: .375rem;
+}
