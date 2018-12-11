@@ -159,6 +159,7 @@ hr {
   padding:0;
   display: block;
   flex: 1 1 auto;
+  position: relative;
 }
 .mainmenu ul li a {
   display: block;
@@ -186,56 +187,40 @@ hr {
 .mainmenu ul li a span.menu-image img {
   max-height: 24px;
 }
-.mainmenu .submenu {
+.mainmenu ul ul {
   display: none;
   position: absolute;
   left: 0;
-  right: 0;
-  top: 76px;
   z-index: 98;
   background:#0b00b3;
-  padding: .75rem;
+  height: auto;
+  border: 1px solid #1e0241;
+  border-top: none;
 }
-.mainmenu ul li:hover > .submenu {
+.mainmenu ul li:hover > ul {
   display: block;
-}
-.mainmenu ul ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1150px;
-  margin: 0 auto;
 }
 .mainmenu ul ul li {
   flex: 1 1 auto;
+  display: block;
 }
 .mainmenu ul ul li a {
   border: none;
 }
-.mainmenu ul ul li:hover > a {
-}
-.mainmenu ul ul li a .menu-image {
-  height: auto;
-  margin-bottom: .75rem;
-}
-.mainmenu ul ul li a .menu-image img {
-  max-height: none;
-}
-.mainmenu ul ul li a .menu-text {
-  margin-bottom: .375rem;
-  font-size: 1.5rem;
+
+.mainmenu ul ul li a {
+  font-size: .875rem;
   font-weight: 600;
   background: -webkit-linear-gradient(#fedf73, #e98001);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: .375rem 1.5rem;
+  white-space: nowrap;
 }
-.mainmenu ul ul li a span.menu-link .button {
-  display: inline-block;
-  background:linear-gradient(#b30014, #5a0307);
-  padding: .375rem .75rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 0;
+.mainmenu ul ul li:hover > a {
+  background:  #040146;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 
 #step {
