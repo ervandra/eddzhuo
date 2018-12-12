@@ -363,7 +363,11 @@ hr {
 }
 
 .internal {
-  padding: 1.5rem 0;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 2px solid #0d02a9f2;
+  box-shadow: 0 0 5px 0px #fff;
 }
 
 .internal h1 {
@@ -413,6 +417,10 @@ hr {
 }
 .pagination li a:hover {
   background:#0b00b3
+}
+
+.single-banner {
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 64em){
