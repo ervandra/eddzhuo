@@ -439,6 +439,24 @@ body {
 
 .footer-copyright p + p {
     margin-left: 1rem;
+    color: #fa9f00;
+}
+
+.article {
+    padding: 1rem 0;
+}
+
+.article h1 {
+    text-align: center;
+    color: #fff116;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+}
+
+.article p strong {
+    color: #fff116;
 }
 
 #floating-contacts {
@@ -499,4 +517,85 @@ body {
 
 #floating-contacts ul li a:hover .text, #floating-contacts ul li a:focus .text {
     display: block;
+}
+
+.category-news {
+    margin-bottom: 2rem;
+}
+
+.category-news .news {
+    padding: 1.5rem;
+    border: 1px solid #fff116;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+.category-news .news:hover {
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    border-color: #fa9f00;
+    background: #1a1c18;
+}
+
+.category-news .news h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.category-news .news a {
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+.category-news .news a:hover, .category-news .news a:focus {
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    text-decoration: underline;
+    opacity: .6;
+}
+
+.pagination {
+    margin: 0 0 1.5rem;
+}
+
+.pagination ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination ul li {
+    margin: 0 .5rem;
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.pagination ul li.current {
+    background: #fa9f00;
+    color: #000;
+    padding: .375rem .75rem;
+    border: 1px solid #fa9f00;
+}
+
+.pagination ul li a {
+    padding: .375rem .75rem;
+    background: #1a1c18;
+    color: #fff116;
+    border: 1px solid #fff116;
+}
+
+.pagination ul li a:hover, .pagination ul li a:focus {
+    background: #fff116;
+    color: #000;
 }

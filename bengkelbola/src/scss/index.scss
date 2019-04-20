@@ -334,6 +334,24 @@ body {
     justify-content: center;
     p+p {
         margin-left: 1rem;
+        color: $brandColorActive;
+    }
+}
+
+.article {
+    padding: 1rem 0;
+    h1 {
+        text-align: center;
+        color: $brandColor;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.75rem;
+    }
+    p {
+        strong {
+            color: $brandColor;
+        }
     }
 }
 
@@ -379,6 +397,69 @@ body {
                     .text {
                         display: block;
                     }
+                }
+            }
+        }
+    }
+}
+
+.category-news {
+    margin-bottom: 2rem;
+    .news {
+        padding: 1.5rem;
+        border: 1px solid $brandColor;
+        border-radius: 4px;
+        margin-bottom: 1.5rem;
+        transition: $transition;
+        &:hover {
+            transition: $transitionActive;
+            border-color: $brandColorActive;
+            background: #1a1c18;
+        }
+        h3 {
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+        a {
+            transition: $transition;
+            &:hover,
+            &:focus {
+                transition: $transitionActive;
+                text-decoration: underline;
+                opacity: .6;
+            }
+        }
+    }
+}
+
+.pagination {
+    margin: 0 0 1.5rem;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 0 .5rem;
+            display: block;
+            font-weight: bold;
+            font-size: 1rem;
+            &.current {
+                background: $brandColorActive;
+                color: #000;
+                padding: .375rem .75rem;
+                border: 1px solid $brandColorActive;
+            }
+            a {
+                padding: .375rem .75rem;
+                background: #1a1c18;
+                color: $brandColor;
+                border: 1px solid $brandColor;
+                &:hover,
+                &:focus {
+                    background: $brandColor;
+                    color: #000;
                 }
             }
         }
