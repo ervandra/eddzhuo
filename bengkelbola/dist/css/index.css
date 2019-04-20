@@ -489,7 +489,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     background-color: #49493d;
-    margin-bottom: 2px;
+    border: 1px solid #1a1c18;
     border-radius: 0px 12px 12px 0px;
     padding: .5rem;
     -webkit-transition: all ease 0.3s;
@@ -499,6 +499,7 @@ body {
 
 #floating-contacts ul li a img {
     margin-right: 1rem;
+    height: 48px;
 }
 
 #floating-contacts ul li a .text {
@@ -509,10 +510,13 @@ body {
 }
 
 #floating-contacts ul li a:hover, #floating-contacts ul li a:focus {
+    border-color: #535353;
+    border-left-color: #1a1c18;
     -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s;
     width: 250px;
     background-color: #212115;
+    z-index: 6;
 }
 
 #floating-contacts ul li a:hover .text, #floating-contacts ul li a:focus .text {

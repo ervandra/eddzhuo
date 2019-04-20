@@ -375,12 +375,13 @@ body {
                 position: relative;
                 align-items: center;
                 background-color: rgb(73, 73, 61);
-                margin-bottom: 2px;
+                border: 1px solid #1a1c18;
                 border-radius: 0px 12px 12px 0px;
                 padding: .5rem;
                 transition: $transitionActive;
                 img {
                     margin-right: 1rem;
+                    height: 48px;
                 }
                 .text {
                     display: none;
@@ -391,9 +392,12 @@ body {
                 width: 85px;
                 &:hover,
                 &:focus {
+                    border-color: #535353;
+                    border-left-color: #1a1c18;
                     transition: $transitionActive;
                     width: 250px;
                     background-color: rgb(33, 33, 21);
+                    z-index: 6;
                     .text {
                         display: block;
                     }
