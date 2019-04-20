@@ -71,6 +71,38 @@ body {
     border-bottom: 5px solid #5f7b12;
 }
 
+.contact-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-header ul li {
+    display: block;
+}
+
+.contact-header ul li a {
+    color: #fff;
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+    color: #fff116;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.contact-header ul li img {
+    display: block;
+    margin: 0 auto .25rem;
+}
+
 #mainmenu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -409,31 +441,62 @@ body {
     margin-left: 1rem;
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
-    .top-header {
-        padding: 0;
-    }
+#floating-contacts {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    z-index: 95;
+}
 
-    .mobile-menu-trigger {
-        display: block;
-        margin-right: 1rem;
-        margin-left: -1rem;
-    }
+#floating-contacts ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
 
-    .logo {
-        text-align: center;
-    }
+#floating-contacts ul li {
+    display: block;
+}
 
-    .logo img {
-        max-height: 48px;
-    }
+#floating-contacts ul li a {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #49493d;
+    margin-bottom: 2px;
+    border-radius: 0px 12px 12px 0px;
+    padding: .5rem;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    width: 85px;
+}
 
-    .contact-header {
-        display: none;
-        text-align: center;
-    }
+#floating-contacts ul li a img {
+    margin-right: 1rem;
+}
 
-    .menu-container {
-        display: none;
-    }
+#floating-contacts ul li a .text {
+    display: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: .9375rem;
+}
+
+#floating-contacts ul li a:hover, #floating-contacts ul li a:focus {
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    width: 250px;
+    background-color: #212115;
+}
+
+#floating-contacts ul li a:hover .text, #floating-contacts ul li a:focus .text {
+    display: block;
 }

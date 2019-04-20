@@ -31,6 +31,30 @@ body {
     border-bottom: 5px solid #5f7b12;
 }
 
+.contact-header {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        li {
+            display: block;
+            a {
+                color: #fff;
+                transition: $transition;
+                color: $brandColor;
+                font-weight: bold;
+                font-size: 1rem;
+            }
+            img {
+                display: block;
+                margin: 0 auto .25rem;
+            }
+        }
+    }
+}
+
 #mainmenu {
     ul {
         display: flex;
@@ -313,26 +337,50 @@ body {
     }
 }
 
-@include mobile {
-    .top-header {
-        padding: 0;
-    }
-    .mobile-menu-trigger {
+#floating-contacts {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    z-index: 95;
+    ul {
         display: block;
-        margin-right: 1rem;
-        margin-left: -1rem;
-    }
-    .logo {
-        text-align: center;
-        img {
-            max-height: 48px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        li {
+            display: block;
+            a {
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+                display: flex;
+                position: relative;
+                align-items: center;
+                background-color: rgb(73, 73, 61);
+                margin-bottom: 2px;
+                border-radius: 0px 12px 12px 0px;
+                padding: .5rem;
+                transition: $transitionActive;
+                img {
+                    margin-right: 1rem;
+                }
+                .text {
+                    display: none;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: .9375rem;
+                }
+                width: 85px;
+                &:hover,
+                &:focus {
+                    transition: $transitionActive;
+                    width: 250px;
+                    background-color: rgb(33, 33, 21);
+                    .text {
+                        display: block;
+                    }
+                }
+            }
         }
-    }
-    .contact-header {
-        display: none;
-        text-align: center;
-    }
-    .menu-container {
-        display: none;
     }
 }
