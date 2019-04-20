@@ -1,0 +1,439 @@
+body {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+a {
+    color: #fff116;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #fa9f00;
+}
+
+.fa {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.btn.btn-primary {
+    background: #fff116;
+    color: #ffffff;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary:not(:disabled):not(.disabled):active {
+    background: #fa9f00;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: #000;
+    min-height: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#header {
+    background: #1a1c18;
+}
+
+.top-header {
+    padding: 1rem 0;
+}
+
+.menu-container {
+    background: #fff116;
+    border-bottom: 5px solid #5f7b12;
+}
+
+#mainmenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#mainmenu ul li {
+    position: relative;
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+#mainmenu ul li + li {
+    border-left: 2px solid #000;
+}
+
+#mainmenu ul li a {
+    background: #fff116;
+    display: block;
+    color: #000;
+    line-height: 40px;
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+#mainmenu ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    border-top: none;
+    margin-left: -2px;
+    min-width: calc(100% + 4px);
+}
+
+#mainmenu ul li ul li {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+#mainmenu ul li ul li + li {
+    border: none;
+}
+
+#mainmenu ul li ul li a {
+    padding: 0 1rem;
+    white-space: nowrap;
+}
+
+#mainmenu ul li:hover ul, #mainmenu ul li:focus ul {
+    display: block;
+    background: #fff116;
+}
+
+#mainmenu ul li:hover:last-child ul, #mainmenu ul li:focus:last-child ul {
+    right: 0;
+}
+
+#mainmenu ul li:hover > a, #mainmenu ul li.active > a, #mainmenu ul li:focus > a {
+    background: #2c2a05;
+    background: -webkit-gradient(linear, left top, right top, from(#2c2a05), to(#67740f));
+    background: linear-gradient(90deg, #2c2a05 0%, #67740f 100%);
+    background-repeat: repeat-x;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.mobile-menu {
+    background: #1a1c18;
+}
+
+.mobile-menu .mobile-menu-header {
+    background: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.mobile-menu .mobile-menu-header .button {
+    margin: 0;
+    border-radius: 0;
+    background: #000;
+}
+
+.mobile-menu ul.menu li {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mobile-menu ul.menu li a {
+    color: #fff;
+    line-height: 32px;
+}
+
+.mobile-menu ul.menu li + li {
+    border-top: 1px solid #000;
+}
+
+.mobile-menu ul.menu ul {
+    margin: 0;
+    border-top: 1px solid #000;
+}
+
+.mobile-menu ul.menu ul li {
+    margin: 0;
+    padding-left: 1rem;
+    text-transform: capitalize;
+    font-weight: normal;
+    opacity: 0.6;
+}
+
+.mobile-menu ul.menu .active > a {
+    color: #000;
+}
+
+.notifications {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.notifications h5 {
+    margin: 0;
+    line-height: 40px;
+    white-space: nowrap;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff116;
+    margin-right: .5rem;
+    font-weight: bold;
+}
+
+.notifications marquee {
+    display: block;
+    margin: 0;
+    line-height: 40px;
+    font-size: .875rem;
+    color: #fff116;
+}
+
+.home-content {
+    margin: 0 -3rem;
+}
+
+.home-box {
+    border: 1px solid #fff116;
+    border-radius: 8px;
+    height: 100%;
+    padding: .5rem;
+}
+
+.home-box img {
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+.home-box img:hover, .home-box img:focus {
+    opacity: .6;
+}
+
+.home-box img {
+    display: block;
+    width: 100%;
+}
+
+.home-box h5 {
+    color: #fff116;
+    font-size: 1.125rem;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: .5rem .5rem 1.5rem;
+}
+
+.home-box h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.home-box h3 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #fa9f00;
+    line-height: 1.2;
+}
+
+.home-box.daftar-now img {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 100px;
+}
+
+.home-box.daftar-now .daftar-now-img {
+    margin-top: 1rem;
+}
+
+.home-box.daftar-now .daftar-now-img img {
+    width: auto;
+}
+
+.footer-contacts {
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.footer-contacts ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.footer-contacts ul li {
+    display: block;
+    font-size: .875rem;
+}
+
+.footer-contacts ul li a {
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+.footer-contacts ul li a img {
+    margin-right: .25rem;
+    vertical-align: center;
+}
+
+.footer-contacts ul li a:hover, .footer-contacts ul li a:focus {
+    text-decoration: underline;
+    opacity: .6;
+}
+
+#footer {
+    margin-top: 2rem;
+    border-top: 1px solid #fa9f00;
+    padding-top: 3rem;
+}
+
+#footer a:hover, #footer a:focus {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-bottom: 2rem;
+}
+
+.social-media ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: block;
+    width: 52px;
+    margin: 0 .5rem;
+}
+
+.social-media ul li a {
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+.social-media ul li a:hover, .social-media ul li a:focus {
+    opacity: .6;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content h2,
+  .footer-content h3,
+  .footer-content h4 {
+    margin-bottom: .75rem;
+    color: #fff116;
+    font-weight: bold;
+}
+
+.footer-content h2 {
+    font-size: 1.5rem;
+}
+
+.footer-content h3 {
+    font-size: 1.25rem;
+}
+
+.footer-content h4 {
+    font-size: 1rem;
+}
+
+.footer-content p {
+    font-size: .875rem;
+}
+
+.footer-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.footer-copyright p + p {
+    margin-left: 1rem;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .top-header {
+        padding: 0;
+    }
+
+    .mobile-menu-trigger {
+        display: block;
+        margin-right: 1rem;
+        margin-left: -1rem;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo img {
+        max-height: 48px;
+    }
+
+    .contact-header {
+        display: none;
+        text-align: center;
+    }
+
+    .menu-container {
+        display: none;
+    }
+}
