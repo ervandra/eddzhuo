@@ -31,7 +31,7 @@
               </a>
             </div>
             <div class="top-menu">
-              <div class="login-widget">
+              <!-- <div class="login-widget">
                 <form action="#">
                   <div class="flex-container align-right align-middle">
                     <input type="text" name="username" id="username" placeholder="Username" />
@@ -43,7 +43,7 @@
                     <button type="submit" class="button alert">Login</button>
                   </div>
                 </form>
-              </div>
+              </div> -->
               <nav id="mainmenu">
                 <ul>
                   <li>
@@ -98,15 +98,23 @@
             <div class="banner-container">
               <div class="banner-decorator"></div>
               <div class="banner-links" id="banner-register">
-                <a href="#">
-                  <img src="images/daftar.png" alt="">
-                </a>
+                <div class="banner-login">
+                  <h4>Login</h4>
+                  <form action="#">
+                    <input type="text" id="uname" name="username" placeholder="Username">
+                    <input type="password" id="psword" name="password" placeholder="Password">
+                    <button type="submit" class="button small expanded">Login</button>
+                  </form>
+                  <div class="banner-promo">
+                    <a href="#" class="button expanded">Promo!!!</a>
+                  </div>
+                </div>
               </div>
-              <div class="banner-links" id="banner-wap">
+              <!-- <div class="banner-links" id="banner-wap">
                 <a href="#">
                   <img src="images/wap.png" alt="">
                 </a>
-              </div>
+              </div> -->
               <div class="orbit" role="region" aria-label="Slideshow" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
                 <div class="orbit-wrapper">
                   <ul class="orbit-container">
@@ -374,7 +382,15 @@
           </div>
 
           <div class="footer-payment text-center">
-            <img src="images/footer.png" alt="FOOTER Payment">
+            <!-- <img src="images/footer.png" alt="FOOTER Payment"> -->
+            <ul>
+              <li><img src="images/logo-bca.png" alt="BCA"></li>
+              <li><img src="images/logo-bni.png" alt="BCA"></li>
+              <li><img src="images/logo-bri.png" alt="BCA"></li>
+              <li><img src="images/logo-mandiri.png" alt="BCA"></li>
+              <li><img src="images/logo-danamon.png" alt="BCA"></li>
+              <li><img src="images/logo-cimb.png" alt="BCA"></li>
+            </ul>
           </div>
 
         </div>
