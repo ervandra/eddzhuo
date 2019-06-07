@@ -1,0 +1,420 @@
+@import "variables";
+@import "mixins";
+body {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: $body;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+}
+
+a {
+  color: $brandColor;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $brandColorActive;
+  }
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.375rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1.125rem;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.button {
+  background: $brandColor;
+  color: $white;
+  &:hover,
+  &:focus,
+  &:active,
+  &:not(:disabled):not(.disabled):active {
+    background: $brandColorActive;
+    color: $white;
+  }
+}
+
+@font-face {
+  font-family: "b2u";
+  src: url("../fonts/b2u.eot?xhkt2p");
+  src: url("../fonts/b2u.eot?xhkt2p#iefix") format("embedded-opentype"),
+    url("../fonts/b2u.ttf?xhkt2p") format("truetype"), url("../fonts/b2u.woff?xhkt2p") format("woff"),
+    url("../fonts/b2u.svg?xhkt2p#b2u") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.b2u {
+  font-family: "b2u" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.b2u-surprise:before {
+  content: "";
+}
+
+.b2u-home:before {
+  content: "";
+}
+
+.b2u-casino:before {
+  content: "";
+}
+
+.b2u-sport:before {
+  content: "";
+}
+
+.b2u-slot:before {
+  content: "";
+}
+
+.b2u-poker:before {
+  content: "";
+}
+
+.b2u-keno:before {
+  content: "";
+}
+
+.b2u-fortune-wheel:before {
+  content: "";
+}
+
+.b2u-promo:before {
+  content: "";
+}
+
+.b2u-download:before {
+  content: "";
+}
+
+.b2u-whatsapp:before {
+  content: "";
+}
+
+.b2u-wechat:before {
+  content: "";
+}
+
+.b2u-my-promo:before {
+  content: "";
+}
+
+.b2u-live-score:before {
+  content: "";
+}
+
+.b2u-cockfight:before {
+  content: "";
+}
+
+.region {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 18px;
+  margin: 5px 10px 5px 5px;
+  display: inline-block;
+  vertical-align: middle;
+  &.region-id {
+    background-image: url(../img/region-id.jpg);
+  }
+}
+
+.dbank {
+  height: 31px;
+  background: url(../img/bank-sprite.png?v=5) no-repeat;
+  display: inline-block;
+  &.bca {
+    background-position: -1px -32px;
+    width: 90px;
+  }
+  &.mandiri {
+    background-position: -112px -31px;
+    width: 97px;
+  }
+  &.bni {
+    background-position: -232px -34px;
+    width: 86px;
+  }
+  &.bri {
+    background-position: -341px -33px;
+    width: 138px;
+  }
+}
+
+.provider {
+  background: url(../../img/provider-sprite.png?v=20) no-repeat;
+  display: inline-block;
+  height: 38px;
+  background-position-y: 0;
+
+  &.provider-OEWK {
+    background-position-x: -5px;
+    width: 114px;
+  }
+
+  &.provider-XPGG {
+    background-position-x: -136px;
+    width: 86px;
+  }
+
+  &.provider-AAGG {
+    background-position-x: -238px;
+    width: 95px;
+  }
+
+  &.provider-GMPL {
+    background-position-x: -352px;
+    width: 144px;
+  }
+
+  &.provider-PTFC {
+    background-position-x: -518px;
+    width: 120px;
+  }
+
+  &.provider-MGTG {
+    background-position-x: -657px;
+    width: 126px;
+  }
+
+  &.provider-POKR {
+    background-position-x: -810px;
+    width: 123px;
+  }
+
+  &.provider-PSBT {
+    background-position-x: -960px;
+    width: 91px;
+  }
+
+  &.provider-GLGG {
+    background-position-x: -1081px;
+    width: 99px;
+  }
+
+  &.provider-JOKR {
+    background-position-x: -1201px;
+    width: 103px;
+  }
+
+  &.provider-OPUS {
+    background-position-x: -1326px;
+    width: 137px;
+  }
+
+  &.provider-ALBT {
+    background-position-x: -1478px;
+    width: 60px;
+  }
+
+  &.provider-ISDN {
+    background-position-x: -1558px;
+    width: 62px;
+  }
+
+  &.provider-UNGM {
+    background-position-x: -1642px;
+    width: 84px;
+  }
+
+  &.provider-GDDN {
+    background-position-x: -1747px;
+    width: 103px;
+  }
+
+  &.provider-IDNP {
+    background-position-x: -1866px;
+    width: 128px;
+  }
+
+  &.provider-STTE {
+    background-position-x: -2018px;
+    width: 77px;
+  }
+
+  &.provider-WGFT {
+    background-position-x: -2113px;
+    width: 99px;
+  }
+
+  &.provider-N2LV {
+    background-position-x: -2242px;
+    width: 88px;
+  }
+
+  &.provider-CSTS {
+    background-position-x: -2362px;
+    width: 119px;
+  }
+
+  &.provider-SOTE {
+    background-position-x: -2505px;
+    width: 31px;
+  }
+
+  &.provider-EBET {
+    background-position-x: -2556px;
+    width: 73px;
+  }
+
+  &.provider-BBIN {
+    background-position-x: -2650px;
+    width: 60px;
+  }
+
+  &.provider-OEGD {
+    background-position-x: -2732px;
+    width: 89px;
+  }
+
+  &.provider-KYGG {
+    background-position-x: -2837px;
+    width: 94px;
+  }
+
+  &.provider-KAGG {
+    background-position-x: -2955px;
+    width: 59px;
+  }
+
+  &.provider-GNDE {
+    background-position-x: -3036px;
+    width: 65px;
+  }
+
+  &.provider-HBNR {
+    background-position-x: -3123px;
+    width: 144px;
+  }
+
+  &.provider-OTGG {
+    background-position-x: -3287px;
+    width: 78px;
+  }
+
+  &.provider-ACTT {
+    background-position-x: -3384px;
+    width: 44px;
+  }
+
+  &.provider-CTBT {
+    background-position-x: -3445px;
+    width: 93px;
+  }
+
+  &.provider-DMGG {
+    background-position-x: -3560px;
+    width: 52px;
+  }
+
+  &.provider-SBOB {
+    background-position-x: -3635px;
+    width: 108px;
+  }
+
+  &.provider-WMCO {
+    background-position-x: -3767px;
+    width: 32px;
+  }
+
+  &.provider-EVOP {
+    background-position-x: -3815px;
+    width: 89px;
+  }
+
+  &.provider-NOEK {
+    background-position-x: -3932px;
+    width: 66px;
+  }
+
+  &.provider-MGTE {
+    background-position-x: -4029px;
+    width: 149px;
+  }
+
+  &.provider-OSGS {
+    background-position-x: -4209px;
+    width: 77px;
+  }
+
+  &.provider-SNCY {
+    background-position-x: -4313px;
+    width: 84px;
+  }
+
+  &.provider-SEGG {
+    background-position-x: -4416px;
+    width: 151px;
+  }
+
+  &.provider-CLOE {
+    background-position-x: -4584px;
+    width: 105px;
+  }
+
+  &.provider-ENGG {
+    background-position-x: -4722px;
+    width: 169px;
+  }
+
+  &.provider-MEBT {
+    background-position-x: -4922px;
+    width: 101px;
+  }
+
+  &.provider-PCPY {
+    background-position-x: -5294px;
+    width: 74px;
+  }
+
+  &.provider-SAGG {
+    background-position-x: -5891px;
+    width: 74px;
+  }
+
+  button.is-active i.provider {
+    background-position-y: -39px;
+  }
+}
