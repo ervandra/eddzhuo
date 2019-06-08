@@ -385,8 +385,8 @@ body {
 }
 
 #footer {
-  margin-top: 2rem;
-  padding-top: 3rem;
+  // margin-top: 2rem;
+  // padding-top: 3rem;
   a {
     &:hover,
     &:focus {
@@ -813,5 +813,83 @@ body {
         border-bottom: 1px solid #ccc;
       }
     }
+  }
+}
+
+.sports-container {
+  border-radius: 4px;
+  padding: 1.875rem 1.875rem;
+  background: #333;
+}
+
+.maincontent {
+  padding: 3rem 0;
+}
+
+ul.contact-info {
+  margin: 0 0 1rem;
+  padding: 0;
+  background: url(../img/24hour.png) no-repeat top right;
+  background-size: 50% auto;
+  li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .social {
+      margin-right: 0.5rem;
+    }
+    + li {
+      margin-top: 1rem;
+    }
+    .img {
+      padding-top: 0.5rem;
+      padding-left: 3.5rem;
+      display: block;
+      width: 100%;
+      flex: 1 1 100%;
+    }
+  }
+}
+
+ul.sidebar-menu {
+  background: #1a1c18;
+  padding: 0;
+  margin: 0 0 1rem;
+  li {
+    display: block;
+    + li {
+      border-top: 1px dashed #ccc;
+    }
+    a {
+      display: block;
+      line-height: 48px;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #ccc;
+      padding: 0 1rem;
+      border-left: 2px solid transparent;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &.active {
+      a {
+        border-left-color: $brandColor;
+        color: $brandColor;
+      }
+    }
+  }
+}
+
+.article {
+  padding: 1.5rem;
+
+  background: #1a1c18;
+  h1 {
+    text-align: left;
+    border-bottom: 1px solid $brandColor;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    display: block;
   }
 }

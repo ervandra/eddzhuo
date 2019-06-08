@@ -457,6 +457,42 @@ img {
     background: #c9ad69;
 }
 
+.social {
+    background: url(../img/social-sprite.png) no-repeat;
+    display: inline-block;
+    width: 35px;
+}
+
+.social.social-phone {
+    background-position: -2px -198px;
+    height: 35px;
+}
+
+.social.social-whatsapp {
+    background-position: -2px -34px;
+    height: 34px;
+}
+
+.social.social-email {
+    background-position: -2px -1px;
+    height: 26px;
+}
+
+.social.social-line {
+    background-position: -2px -75px;
+    height: 34px;
+}
+
+.social.social-wechat {
+    background-position: -2px -116px;
+    height: 34px;
+}
+
+.social.social-livechat {
+    background-position: -2px -240px;
+    height: 34px;
+}
+
 .grid-container {
     max-width: 1430px;
 }
@@ -948,11 +984,6 @@ body {
 .footer-menu ul li a:hover, .footer-menu ul li a:focus {
     text-decoration: underline;
     opacity: 0.6;
-}
-
-#footer {
-    margin-top: 2rem;
-    padding-top: 3rem;
 }
 
 #footer a:hover, #footer a:focus {
@@ -1485,4 +1516,96 @@ body {
     color: #fff;
     border: none;
     border-bottom: 1px solid #ccc;
+}
+
+.sports-container {
+    border-radius: 4px;
+    padding: 1.875rem 1.875rem;
+    background: #333;
+}
+
+.maincontent {
+    padding: 3rem 0;
+}
+
+ul.contact-info {
+    margin: 0 0 1rem;
+    padding: 0;
+    background: url(../img/24hour.png) no-repeat top right;
+    background-size: 50% auto;
+}
+
+ul.contact-info li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+ul.contact-info li .social {
+    margin-right: 0.5rem;
+}
+
+ul.contact-info li + li {
+    margin-top: 1rem;
+}
+
+ul.contact-info li .img {
+    padding-top: 0.5rem;
+    padding-left: 3.5rem;
+    display: block;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+
+ul.sidebar-menu {
+    background: #1a1c18;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+ul.sidebar-menu li {
+    display: block;
+}
+
+ul.sidebar-menu li + li {
+    border-top: 1px dashed #ccc;
+}
+
+ul.sidebar-menu li a {
+    display: block;
+    line-height: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ccc;
+    padding: 0 1rem;
+    border-left: 2px solid transparent;
+}
+
+ul.sidebar-menu li a:hover {
+    color: #fff;
+}
+
+ul.sidebar-menu li.active a {
+    border-left-color: #c9ad69;
+    color: #c9ad69;
+}
+
+.article {
+    padding: 1.5rem;
+    background: #1a1c18;
+}
+
+.article h1 {
+    text-align: left;
+    border-bottom: 1px solid #c9ad69;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    display: block;
 }

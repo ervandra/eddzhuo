@@ -445,3 +445,33 @@ img {
   color: #000;
   background: $brandColor;
 }
+
+.social {
+  background: url(../img/social-sprite.png) no-repeat;
+  display: inline-block;
+  width: 35px;
+  &.social-phone {
+    background-position: -2px -198px;
+    height: 35px;
+  }
+  &.social-whatsapp {
+    background-position: -2px -34px;
+    height: 34px;
+  }
+  &.social-email {
+    background-position: -2px -1px;
+    height: 26px;
+  }
+  &.social-line {
+    background-position: -2px -75px;
+    height: 34px;
+  }
+  &.social-wechat {
+    background-position: -2px -116px;
+    height: 34px;
+  }
+  &.social-livechat {
+    background-position: -2px -240px;
+    height: 34px;
+  }
+}
