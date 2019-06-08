@@ -162,6 +162,14 @@ img {
     background-image: url(../img/region-id.jpg);
 }
 
+.region.region-my {
+    background-image: url(../img/region-my.jpg);
+}
+
+.region.region-th {
+    background-image: url(../img/region-th.jpg);
+}
+
 .dbank {
     height: 31px;
     background: url(../img/bank-sprite.png?v=5) no-repeat;
@@ -422,6 +430,31 @@ img {
 
 .provider button.is-active i.provider {
     background-position-y: -39px;
+}
+
+.reveal {
+    border: none;
+    -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 0.01);
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.01);
+}
+
+.reveal .modal-footer {
+    margin: 0 -1rem -1rem;
+    padding: 1rem;
+    border-top: 1px solid #c9ad69;
+    text-align: center;
+}
+
+.reveal .modal-footer p {
+    margin: 0;
+}
+
+.reveal h3 {
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    margin: -1rem -1rem 1rem;
+    color: #000;
+    background: #c9ad69;
 }
 
 .grid-container {
@@ -863,6 +896,8 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .footer-banks ul li {
@@ -1200,5 +1235,254 @@ body {
 }
 
 .floating {
+    position: fixed;
+    top: 48%;
+    left: 2px;
+    z-index: 25;
+}
+
+.floating .btn-handler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: none;
+    flex-wrap: none;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1.5rem;
+    min-width: 58px;
+    text-align: center;
+    height: 58px;
+    padding: 0.5rem;
+    max-width: 164px;
+    border-radius: 8px;
+    color: #c9ad69;
+    border: 1px solid #c9ad69;
+}
+
+.floating .btn-handler .icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 30rem;
+}
+
+.floating .btn-handler .text {
+    display: block;
+    width: 0;
+    overflow: hidden;
+    font-size: 1rem;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.floating .btn-handler:hover {
+    background: #bb9844;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.floating .btn-handler:hover .text {
+    width: auto;
+    padding-left: 0.5rem;
+}
+
+.floating .btn-handler:hover .icon {
+    background: #fff;
+    color: #c9ad69;
+}
+
+#floating-chat {
+    left: auto;
+    right: 2px;
+}
+
+#mobile-menu {
     display: none;
+}
+
+#mobile-menu .button {
+    background: #333;
+    color: #c9ad69;
+    font-size: 1.125rem;
+    text-align: left;
+    padding: 0 1rem;
+    line-height: 40px;
+}
+
+#mobile-menu .button .fa {
+    margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .top-header {
+        padding-top: 1rem;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .contact-header ul li {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+
+    .contact-header ul li a.button {
+        width: 100%;
+        font-size: 0.875rem;
+    }
+
+    .notif-menu ul li a .text {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    #mainmenu {
+        display: none;
+    }
+
+    #mainmenu.open {
+        display: block;
+    }
+
+    #mainmenu ul {
+        display: block;
+        padding-bottom: 1rem;
+    }
+
+    #mainmenu ul li {
+        display: block;
+    }
+
+    #mainmenu ul li + li {
+        border: none;
+        border-top: 1px solid #333;
+    }
+
+    #mainmenu ul li a {
+        text-align: left;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 0 1rem;
+        line-height: 52px;
+    }
+
+    #mainmenu ul li ul {
+        position: relative;
+        padding-left: 1.5rem;
+        padding-bottom: 0;
+    }
+}
+
+.language-container h5 {
+    color: #333;
+    font-size: 1.125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.language-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.language-container ul li {
+    display: block;
+    font-size: 0.875rem;
+}
+
+.language-container ul li + li {
+    border-left: 1px solid #333;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+.language-container ul li a {
+    color: #666;
+}
+
+.language-container ul li a:hover {
+    color: #333;
+}
+
+.language-container ul li.active a {
+    color: #333;
+    font-weight: bold;
+}
+
+.reveal h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#login-modal {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#login-modal form {
+    padding: 1rem;
+}
+
+#login-modal form .logo-modal {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#login-modal form .field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#login-modal form .field.text-right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+#login-modal form .field .icon {
+    font-size: 1.125rem;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+#login-modal form .field input {
+    background: none;
+    padding: 0 0.5rem;
+    border-radius: 0;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #ccc;
 }

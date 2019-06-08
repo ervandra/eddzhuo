@@ -159,6 +159,12 @@ img {
   &.region-id {
     background-image: url(../img/region-id.jpg);
   }
+  &.region-my {
+    background-image: url(../img/region-my.jpg);
+  }
+  &.region-th {
+    background-image: url(../img/region-th.jpg);
+  }
 }
 
 .dbank {
@@ -417,4 +423,25 @@ img {
   button.is-active i.provider {
     background-position-y: -39px;
   }
+}
+
+.reveal {
+  border: none;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.01);
+  .modal-footer {
+    margin: 0 -1rem -1rem;
+    padding: 1rem;
+    border-top: 1px solid $brandColor;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+  }
+}
+.reveal h3 {
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+  margin: -1rem -1rem 1rem;
+  color: #000;
+  background: $brandColor;
 }

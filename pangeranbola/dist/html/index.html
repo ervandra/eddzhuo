@@ -21,15 +21,15 @@
       <div class="top-header">
         <div class="grid-container">
           <div class="grid-x grid-margin-x align-middle">
-            <div class="cell small-12 medium-5 small-order-2 medium-order-1">
+            <div class="cell small-12 medium-5">
               <div class="logo">
                 <a href="#"><img src="../img/logo.png" alt="logo"></a>
               </div>
             </div>
-            <div class="cell small-12 medium-7 small-order-1 medium-order-2">
+            <div class="cell small-12 medium-7">
               <div class="contact-header">
                 <ul>
-                  <li><a href="#" class="button hollow">Login</a></li>
+                  <li><a href="#" class="button hollow" data-open="login-modal">Login</a></li>
                   <li><a href="#" class="button ">Daftar</a></li>
                 </ul>
               </div>
@@ -41,7 +41,11 @@
         <div class="grid-container">
           <div class="grid-x grid-margin-x align-middle">
             <div class="cell">
-              <div id="mainmenu">
+              <div id="mobile-menu">
+                <button type="button" class="button expanded" data-toggle="mainmenu"><span
+                    class="fa fa-bars"></span>Menu</button>
+              </div>
+              <div id="mainmenu" data-toggler=".open">
                 <ul>
                   <li class="active"><a href="#"><span class="b2u b2u-home"></span> Home</a></li>
                   <li><a href="#"><span class="b2u b2u-sport"></span> Olahraga</a>
@@ -84,13 +88,15 @@
                   DEPOSIT UNTUK GAME CASINO,BONUS 10% UNTUK GAME BOLA TANGKAS</marquee>
                 <div class="notif-menu">
                   <ul>
-                    <li><a href="#">
-                        <span class="site-language"><span class="region region-id"></span> | Bahasa Indonesia</span>
+                    <li><a href="#" data-open="change-language">
+                        <span class="site-language"><span class="region region-id"></span><span class="text"> | Bahasa
+                            Indonesia</span></span>
                       </a></li>
                     <li><a href="#"><span class="fa-stack">
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                        </span> Hubungi Kami</a></li>
+                        </span>
+                        <span class="text">Hubungi Kami</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -336,15 +342,87 @@
     </div>
 
     <div id="floating-chat" class="floating">
+      <!-- <div class="handle"><span class="fa fa-info"></span></div>
+      <div class="handle-container">
+        <a href="#" class="handle-btn">
+          <span class="text-block">
+            <span class="fa fa-phone"></span>
+            24/7 CS
+          </span>
+        </a>
+      </div> -->
       <a href="#" class="button btn-handler">
         <span class="icon">
-          <span class="fa fa-info"></span>
-        </span>
-        <span class="text">
           <span class="fa fa-phone"></span>
-          24/7 CS
         </span>
+        <span class="text">24/7 CS</span>
       </a>
+    </div>
+
+    <div class="reveal" id="change-language" data-reveal>
+      <h3>Pilih lokasi / bahasa anda</h3>
+      <div class="language-container">
+        <div class="region-lang">
+          <h5><span class="region region-my"></span> Malaysia</h5>
+          <ul>
+            <li class=""><a href="#">English</a></li>
+            <li><a href="#">Melayu</a></li>
+            <li><a href="#">中文</a></li>
+          </ul>
+        </div>
+        <div class="region-lang">
+          <h5><span class="region region-id"></span> Indonesia</h5>
+          <ul>
+            <li class="active"><a href="#">Bahasa Indonesia</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </div>
+        <div class="region-lang">
+          <h5><span class="region region-th"></span> Thailand</h5>
+          <ul>
+            <li class=""><a href="#">ภาษาไทย</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="reveal tiny" id="login-modal" data-reveal>
+      <h3>Login</h3>
+      <form action="#">
+
+        <div class="logo-modal">
+          <img src="../img/logo.png" alt="LOGO">
+        </div>
+
+        <div class="field">
+          <div class="icon"><span class="fa fa-user"></span></div>
+          <div class="input-field"><input type="text" name="username" placeholder="Username"></div>
+        </div>
+
+        <div class="field">
+          <div class="icon"><span class="fa fa-key"></span></div>
+          <div class="input-field"><input type="password" name="password" placeholder="Password"></div>
+        </div>
+
+        <div class="field text-right">
+          <p><a href="#">Forgot Password?</a></p>
+        </div>
+
+        <div class="action">
+          <button type="submit" class="button expanded">Login</button>
+        </div>
+
+      </form>
+      <div class="modal-footer">
+        <p>Belum mendaftar? <a href="#">Daftar</a></p>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
 
 
