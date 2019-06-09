@@ -582,8 +582,6 @@ body {
     align-items: center;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    overflow: visible;
-    overflow-x: auto;
 }
 
 #mainmenu ul li {
@@ -1362,7 +1360,18 @@ body {
     margin-right: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
+    #mainmenu ul li a {
+        font-size: 0.75rem;
+        padding: 0 0.5rem;
+    }
+
+    #mainmenu ul li a .b2u {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .top-header {
         padding-top: 1rem;
     }
