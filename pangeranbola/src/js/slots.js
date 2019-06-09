@@ -6,11 +6,12 @@ jQslots(document).ready(function ($) {
     itemSelector: '.grid-item',
   });
 
-  $('.filter-tipe').on('click', 'li', function (e) {
+  $('.filter-platform').on('click', 'li > a', function (e) {
     e.preventDefault();
+    // $(this).preventDefault();
     var filterValue = $(this).attr('data-filter');
     $isotope.isotope({ filter: filterValue });
-    $('.filter-tipe li').removeClass('active');
-    $(this).addClass('active');
+    $('.filter-platform li').removeClass('active');
+    $(this).parent().addClass('active');
   });
 })
