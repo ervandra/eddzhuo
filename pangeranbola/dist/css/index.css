@@ -1931,3 +1931,34 @@ ul.filter-platform li.active a .provider {
     -webkit-filter: grayscale(0.5);
     filter: grayscale(0.5);
 }
+
+.slots-container {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .slots-container {
+        display: block;
+    }
+}
+
+.slot-container-mobile {
+    display: block;
+    text-align: center;
+}
+
+.slot-container-mobile h2 {
+    font-size: 1.25rem;
+    color: #c9ad69;
+    margin-bottom: 1.5rem;
+}
+
+.slot-container-mobile .button {
+    font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+    .slot-container-mobile {
+        display: none;
+    }
+}

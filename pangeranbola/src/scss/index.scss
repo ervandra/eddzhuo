@@ -1165,3 +1165,25 @@ ul.filter-platform {
     }
   }
 }
+
+.slots-container {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+.slot-container-mobile {
+  display: block;
+  text-align: center;
+  h2 {
+    font-size: 1.25rem;
+    color: $brandColor;
+    margin-bottom: 1.5rem;
+  }
+  .button {
+    font-weight: bold;
+  }
+  @include desktop {
+    display: none;
+  }
+}
