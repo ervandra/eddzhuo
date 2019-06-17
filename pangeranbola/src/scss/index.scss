@@ -478,6 +478,19 @@ body {
   }
 }
 
+.download-page {
+  h1 {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+}
+
 #floating-contacts {
   position: fixed;
   top: 10%;
@@ -1185,5 +1198,71 @@ ul.filter-platform {
   }
   @include desktop {
     display: none;
+  }
+}
+
+.download-boxes {
+  padding: 1rem;
+  background: #191919;
+  .download-box {
+    background: #000;
+    padding: 1rem;
+    margin-bottom: 1.875rem;
+    h5 {
+      font-size: 1rem;
+      color: $brandColorActive;
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      margin-bottom: 0.75rem;
+      span {
+        margin-right: 0.5rem;
+      }
+    }
+    img {
+      margin-bottom: 0.75rem;
+    }
+    .login-required {
+      h6 {
+        background: rgba(255, 255, 255, 0.1);
+        margin-bottom: 0.75rem;
+        line-height: 40px;
+        font-size: 0.75rem;
+        padding-left: 0.75rem;
+        font-weight: normal;
+        color: #ccc;
+        border-left: 3px solid $brandColor;
+      }
+    }
+    .download-platforms {
+      .download-pf {
+        display: flex;
+        align-items: center;
+        .download-icon {
+          margin-right: 0.5rem;
+        }
+        .download-info {
+          p {
+            margin: 0 0 0.25rem;
+            font-size: 0.75rem;
+          }
+          .button {
+            background: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            border: 1px solid $brandColor;
+            color: $brandColor;
+            margin: 0;
+            &:hover,
+            &:focus {
+              border-color: #fff;
+            }
+          }
+        }
+        + .download-pf {
+          margin-top: 0.5rem;
+        }
+      }
+    }
   }
 }

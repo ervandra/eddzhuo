@@ -484,3 +484,130 @@ img {
     height: 34px;
   }
 }
+
+.platform {
+  display: inline-block;
+  background: url(../img/download-platform.png) no-repeat -100px -100px;
+  background-size: 70px auto;
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
+  &.platform-windows {
+    background-position: 0 0;
+  }
+  &.platform-android {
+    background-position: 0 -78px;
+  }
+  &.platform-ios {
+    background-position: 0 -155px;
+  }
+  &.platform-mobile {
+    background-position: 0 -311px;
+  }
+}
+
+.download-provider {
+  display: inline-block;
+  background: url(../img/download-provider.png) no-repeat -100px -100px;
+  height: 26px;
+  margin-right: 5px;
+  &.download-PYTH {
+    background-position: -2px 0;
+    width: 31px;
+  }
+  &.download-PYTH,
+  &.download-PTFC {
+    background-position: -2px 0;
+    width: 31px;
+  }
+  &.download-GMPL {
+    background-position: -36px 0;
+    width: 26px;
+  }
+  &.download-MOGG,
+  &.download-MGTG {
+    background-position: -71px 0;
+    width: 28px;
+  }
+  &.download-XPGG {
+    background-position: -103px 0;
+    width: 27px;
+  }
+  &.download-JOKR {
+    background-position: -132px -1px;
+    width: 37px;
+  }
+  &.download-OPUS {
+    background-position: -173px -1px;
+    width: 27px;
+  }
+  &.download-ALBT {
+    background-position: -206px 0;
+    width: 28px;
+  }
+  &.download-AAGG,
+  &.download-AGGS {
+    background-position: -238px -2px;
+    width: 39px;
+  }
+  &.download-IDNP {
+    background-position: -283px -1px;
+    width: 22px;
+  }
+  &.download-STTE {
+    background-position: -314px -2px;
+    width: 48px;
+  }
+  &.download-EBET {
+    background-position: -370px -2px;
+    width: 54px;
+  }
+  &.download-ACTT {
+    background-position: -432px 0;
+    width: 34px;
+  }
+  &.download-CSTS {
+    background-position: -478px -1px;
+    width: 54px;
+  }
+  &.download-DMGG {
+    background-position: -542px -1px;
+    width: 51px;
+  }
+  &.download-WMCO {
+    background-position: -606px -1px;
+    width: 22px;
+  }
+  &.download-GDDN {
+    background-position: -639px -1px;
+    width: 22px;
+  }
+  &.download-NOEK {
+    background-position: -673px -1px;
+    width: 42px;
+  }
+  &.download-MGTE {
+    background-position: -730px -1px;
+    width: 75px;
+  }
+  &.download-OSGS {
+    background-position: -823px -2px;
+    width: 49px;
+  }
+  &.download-SOTE {
+    background-position: -885px -2px;
+    width: 43px;
+  }
+  &.download-SCR888 {
+    background-position: -108px -29px;
+    width: 44px;
+  }
+  &.download-CSTS {
+    background-position: -478px -2px;
+    width: 54px;
+  }
+  &.download-DMGG {
+    background-position: -542px -1px;
+    width: 51px;
+  }
+}
