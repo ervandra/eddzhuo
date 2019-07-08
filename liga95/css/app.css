@@ -196,12 +196,12 @@ span.kontak.livechat {
 /* css new mainmenu */
 #mainmenu {
   /* border-right: 1px solid #1e0241; */
-  background: -webkit-linear-gradient(#18355e 50%, #102544 50%);
-  background: -o-linear-gradient(#18355e 50%, #102544 50%);
-  background: -moz-linear-gradient(#18355e 50%, #102544 50%);
-  background: linear-gradient(#18355e 50%, #102544 50%);
+  background: -webkit-linear-gradient(#6c1320 50%, #430907 50%);
+  background: -o-linear-gradient(#6c1320 50%, #430907 50%);
+  background: -moz-linear-gradient(#6c1320 50%, #430907 50%);
+  background: linear-gradient(#6c1320 50%, #430907 50%);
   border-radius: 10px 10px 0px 0px;
-  border: 2px solid #204f7f;
+  border: 2px solid #781636;
 }
 #mainmenu ul {
   margin: 0;
@@ -226,7 +226,7 @@ span.kontak.livechat {
   margin: 0;
 }
 #mainmenu ul li + li {
-  border-left: 1px solid #204f7f;
+  border-left: 1px solid #781636;
 }
 #mainmenu ul li a {
   display: block;
@@ -252,15 +252,11 @@ span.kontak.livechat {
   display: none;
   position: absolute;
   z-index: 987;
-  background: #204f7f;
+  background: #430907;
   white-space: nowrap;
-  left: -2px;
-  right: -2px;
 }
 #mainmenu ul li:hover ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  display: block;
 }
 #mainmenu ul ul li {
   font-size: 0.75rem;
@@ -279,7 +275,7 @@ span.kontak.livechat {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #204f7f;
+  border: 1px solid #781636;
   border-radius: 4px;
   overflow: hidden;
   white-space: nowrap;
@@ -339,14 +335,14 @@ span.kontak.livechat {
 }
 
 .table-container {
-  background: linear-gradient(#18355e 50%, #102544 50%);
+  background: linear-gradient(#6c1320 50%, #430907 50%);
   padding: 1.875rem;
-  border: 1px solid #205183;
+  border: 1px solid #781636;
   margin-bottom: 1rem;
 }
 .panel {
-  background: #0c101d !important;
-  border: 1px solid #1f5083;
+  background: #29040d !important;
+  border: 1px solid #781636;
   border-radius: 4px;
   box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.65), 0px 0px 0 0 rgba(255, 255, 255, 0.08),
     0px 0px 0 0 rgba(255, 255, 255, 0.1);
@@ -363,11 +359,11 @@ span.kontak.livechat {
   line-height: 3;
   border-radius: 4px;
   text-transform: uppercase;
-  background: #0f1733;
-  background: -webkit-linear-gradient(#18355e 50%, #102544 50%);
-  background: -o-linear-gradient(#18355e 50%, #102544 50%);
-  background: -moz-linear-gradient(#18355e 50%, #102544 50%);
-  background: linear-gradient(#18355e 50%, #102544 50%);
+  background: #29040d;
+  background: -webkit-linear-gradient(#6c1320 50%, #430907 50%);
+  background: -o-linear-gradient(#6c1320 50%, #430907 50%);
+  background: -moz-linear-gradient(#6c1320 50%, #430907 50%);
+  background: linear-gradient(#6c1320 50%, #430907 50%);
   margin: 0;
   display: flex;
   justify-content: center;
@@ -398,7 +394,7 @@ span.kontak.livechat {
   line-height: 28px;
 }
 .panel table tr {
-  border-bottom: 1px solid #234862 !important;
+  border-bottom: 1px solid #781636 !important;
 }
 .panel table tbody tr:last-child {
   border: none !important;
@@ -429,7 +425,7 @@ span.kontak.livechat {
   left: 10px;
   text-decoration: none;
   color: #fdfdfd;
-  background-color: #18355e;
+  background-color: #6c1320;
   font-size: 12px;
   padding: 5px 10px 5px 10px;
   border-color: #747b82;
