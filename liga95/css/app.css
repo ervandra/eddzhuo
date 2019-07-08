@@ -432,3 +432,7 @@ span.kontak.livechat {
   border-style: solid;
   border-width: 1px;
 }
+
+.internal img {
+  width: 100%;
+}
