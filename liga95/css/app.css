@@ -244,7 +244,8 @@ span.kontak.livechat {
   margin-left: 0.5rem;
 }
 #mainmenu ul li:hover > a,
-#mainmenu ul li:focus > a {
+#mainmenu ul li:focus > a,
+#mainmenu ul li.active > a {
   background: rgba(255, 255, 255, 0.1);
 }
 
