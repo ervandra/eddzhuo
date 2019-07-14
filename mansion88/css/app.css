@@ -1,3 +1,31 @@
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   background: #344563;
   color: #fff;
@@ -104,7 +132,7 @@ textarea::placeholder {
   padding-left: 4px;
 }
 
-#header {
+.top-header {
   background: linear-gradient(to bottom, #293b5d, #3b5887);
   border-bottom: 1px solid #fdee66;
 }
@@ -115,15 +143,12 @@ textarea::placeholder {
   justify-content: space-between;
 }
 
+.navigation {
+  background: #2b3a55;
+}
+
 /* css new mainmenu */
 #mainmenu {
-  /* border-right: 1px solid #1e0241; */
-  background: -webkit-linear-gradient(#6c1320 50%, #430907 50%);
-  background: -o-linear-gradient(#6c1320 50%, #430907 50%);
-  background: -moz-linear-gradient(#6c1320 50%, #430907 50%);
-  background: linear-gradient(#6c1320 50%, #430907 50%);
-  border-radius: 10px 10px 0px 0px;
-  border: 2px solid #781636;
 }
 #mainmenu ul {
   margin: 0;
@@ -135,62 +160,66 @@ textarea::placeholder {
 #mainmenu ul li {
   flex: 1 1 auto;
   display: block;
-  font-size: 0.875rem;
+  position: relative;
+  font-size: 0.75rem;
 }
-#mainmenu ul li.menu-with-icon {
-  width: 40px;
-  max-width: 40px;
-}
-#mainmenu ul li.menu-with-icon a {
-  font-size: 1.25rem;
-}
-#mainmenu ul li.menu-with-icon a .fa {
-  margin: 0;
-}
-#mainmenu ul li + li {
-  border-left: 1px solid #781636;
-}
+
 #mainmenu ul li a {
+  position: relative;
   display: block;
-  height: 40px;
-  line-height: 40px;
+  height: 38px;
+  line-height: 38px;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "titillium";
   text-align: center;
   transition: all ease 0.3s;
   letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0);
 }
 #mainmenu ul li a .fa {
-  margin-left: 0.5rem;
+  margin-left: 0.75rem;
+}
+#mainmenu ul li.hot > a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 1rem;
+  width: 31px;
+  height: 21px;
+  z-index: 5;
+  background: url(../images/PROMOTION-hot.png) no-repeat center;
+  background-size: cover;
+  transition: all ease 0.3s;
+  animation: blink 1s linear infinite;
 }
 #mainmenu ul li:hover > a,
-#mainmenu ul li:focus > a,
+#mainmenu ul li:focus > a {
+  background-color: #0252af;
+}
 #mainmenu ul li.active > a {
-  background: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(to bottom, #0252af, #15aae8);
 }
 
 #mainmenu ul ul {
   display: none;
   position: absolute;
   z-index: 987;
-  background: #430907;
   white-space: nowrap;
+  min-width: 100%;
+  background: #2b3a55;
 }
 #mainmenu ul li:hover ul {
   display: block;
 }
 #mainmenu ul ul li {
   font-size: 0.75rem;
-  text-align: center;
-}
-#mainmenu ul ul li + li {
-  border: none;
+  display: block;
 }
 #mainmenu ul ul li a {
-  text-align: center;
   padding: 0 1rem;
+  text-align: left;
 }
 
 .logo {
@@ -271,4 +300,60 @@ textarea::placeholder {
 .header-actions a.login-btn:focus {
   background: url(../images/login-tombol-hover-min.png) no-repeat center;
   background-size: cover;
+}
+
+.newsticker-container {
+  display: flex;
+  align-items: center;
+}
+#newsticker {
+  background: #00040a;
+}
+.newsticker-container marquee {
+  margin: 0;
+  line-height: 38px;
+  color: #fff;
+  font-size: 0.875rem;
+}
+.newsticker-container h5 {
+  margin: 0;
+  line-height: 28px;
+  margin-right: 1rem;
+  font-size: 0.875rem;
+  background: #2b3a55;
+  border-radius: 30rem;
+  width: 28px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-slider {
+  position: relative;
+}
+.nivo-controlNav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  padding: 0.5rem 0 !important;
+}
+
+#home-content {
+  background: url(../images/body-banner-min.jpg) no-repeat center;
+  background-size: cover;
+  padding: 1rem 0;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-header h3 {
+  color: #fff;
+  font-size: 1rem;
+}
+.section-header a {
+  text-decoration: underline;
+  font-size: 0.875rem;
 }
