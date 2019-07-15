@@ -230,6 +230,44 @@ textarea::placeholder {
 .logo {
   margin-right: 1rem;
 }
+
+.header-login {
+  padding: 2rem 0;
+}
+.header-login form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-login input {
+  height: 32px;
+  margin: 0;
+  width: 96px;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 32px;
+  padding: 0 0.375rem;
+  border: none !important;
+  box-shadow: none !important;
+  padding-top: 2px;
+}
+.header-login .captcha-img {
+  margin-left: 0.5rem;
+  height: 32px;
+}
+.header-login .captcha {
+  width: 72px;
+}
+.header-login .button {
+  margin: 0;
+  margin-left: 0.5rem;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+}
+
 .header-contacts {
   margin: 0 1rem;
   flex: 1;
@@ -384,10 +422,25 @@ textarea::placeholder {
   align-items: center;
   padding: 0.25rem 0.5rem;
 }
-.last-deposit {
+.latest-item {
   border: 1px solid #646e7f;
+  display: none;
 }
-.last-deposit .latest-header {
+
+#latest.active .last-withdraw {
+  display: block;
+}
+#latest:not(.active) .last-deposit {
+  display: block;
+}
+#latest.active .last-deposit {
+  display: none;
+}
+#latest:not(.active) .last-withdraw {
+  display: none;
+}
+
+.latest-item .latest-header {
   background: url(../images/latest-deposit-bar-min.png) no-repeat center;
   background-size: cover;
 }

@@ -28,32 +28,23 @@
               <div class="awards">
                 <img src="images/AWARD-min-min.png" alt="AWARDS" />
               </div>
-              <div class="header-contacts">
-                <div class="helper">
-                  <p>Butuh bantuan? Jangan ragu hubungi CS kami. Online 24 jam</p>
-                </div>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <span class="image"><img src="images/WA-icon.png" alt="WA"></span>
-                      <span class="text">WA/Telepon <br />+851234567890</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span class="image"><img src="images/LINE-icon.png" alt="LINE"></span>
-                      <span class="text">LINE <br />MansionBola</span>
-                    </a>
-                  </li>
-                </ul>
+              <div class="header-login">
+                <form action="#">
+                  <input type="text" name="username" placeholder="Username">
+                  <input type="password" name="password" placeholder="Password">
+                  <img src="images/captcha.jpg" alt="" class="captcha-img">
+                  <input type="text" name="captcha" placeholder="Captcha" class="captcha">
+                  <button class="button alert login-btn">Login</button>
+                  <!-- <a href="#" class="button success register-btn">Register</a> -->
+                </form>
               </div>
-              <div class="header-actions">
+              <!-- <div class="header-actions">
 
                 <a href="#" class="register-btn">Register</a>
 
                 <a href="#" class="login-btn">Login</a>
 
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -148,11 +139,135 @@
           </div>
           <div class="cell small-3">
             <div class="section">
-              <div class="latest">
-                <div class="last-deposit active">
+              <div class="latest active" id="latest" data-toggler=".active">
+                <div class="last-deposit latest-item">
                   <div class="latest-header">
                     <h3>Latest Deposit</h3>
-                    <a href="#"><span class="fa fa-arrow-down"></span></a>
+                    <a href="#" data-toggle="latest"><span class="fa fa-chevron-up"></span></a>
+                  </div>
+                  <div class="latest-content">
+                    <div id="forscrolldp">
+                      <div class="ctrow ctrow-even">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBEExx</div>
+                          <div class="col col-6">Rp. 100000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-odd">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBAAxx</div>
+                          <div class="col col-6">Rp. 1000000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-even">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBxx</div>
+                          <div class="col col-6">Rp. 100000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-odd">
+                        <div class="helper">
+                          <div class="col col-6"> xxZGBDDxx</div>
+                          <div class="col col-6">Rp. 203000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-even">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBFFxx</div>
+                          <div class="col col-6">Rp. 5000000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-odd">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBAAxx</div>
+                          <div class="col col-6">Rp. 1955000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-even">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBCCxx</div>
+                          <div class="col col-6">Rp. 300000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-odd">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBFFxx</div>
+                          <div class="col col-6">Rp. 2500000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-even">
+                        <div class="helper">
+                          <div class="col col-6"> xxZGBDDxx</div>
+                          <div class="col col-6">Rp. 200000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-odd">
+                        <div class="helper">
+                          <div class="col col-6">DxxBAAxx</div>
+                          <div class="col col-6">Rp. 6000000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-even">
+                        <div class="helper">
+                          <div class="col col-6">DxxBAAxx</div>
+                          <div class="col col-6">Rp. 2000000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-odd">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBxx</div>
+                          <div class="col col-6">Rp. 50000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-even">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBAAxx</div>
+                          <div class="col col-6">Rp. 4175000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-odd">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBxx</div>
+                          <div class="col col-6">Rp. 100000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-even">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBAAxx</div>
+                          <div class="col col-6">Rp. 650000</div>
+                        </div>
+                      </div>
+
+                      <div class="ctrow ctrow-odd">
+                        <div class="helper">
+                          <div class="col col-6">AxxGBFFxx</div>
+                          <div class="col col-6">Rp. 150000</div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="last-withdraw latest-item">
+                  <div class="latest-header">
+                    <h3>Latest Withdraw</h3>
+                    <a href="#" data-toggle="latest"><span class="fa fa-chevron-down"></span></a>
                   </div>
                   <div class="latest-content">
                     <div id="forscrolldp">
