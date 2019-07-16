@@ -26,6 +26,29 @@
     opacity: 1;
   }
 }
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-288px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-288px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body {
   background: #344563;
   color: #fff;
@@ -232,7 +255,7 @@ textarea::placeholder {
 }
 
 .header-login {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .header-login form {
   display: flex;
@@ -243,7 +266,7 @@ textarea::placeholder {
 .header-login input {
   height: 32px;
   margin: 0;
-  width: 96px;
+  width: 80px;
   margin-left: 0.5rem;
   font-size: 0.75rem;
   line-height: 32px;
@@ -279,10 +302,12 @@ textarea::placeholder {
   padding-left: 1.75rem;
   margin-bottom: 1rem;
   margin: 0.5rem auto 1rem;
+  overflow: hidden;
 }
 .header-contacts .helper p {
   font-size: 0.6875rem;
   line-height: 20px;
+  white-space: nowrap;
   margin: 0;
 }
 .header-contacts ul {
@@ -475,10 +500,13 @@ textarea::placeholder {
   text-align: center;
 }
 
-#forscrolldp {
+.latest-content {
   height: 290px;
   overflow: hidden;
-  overflow-y: auto;
+}
+#forscrolldp,
+#forscrollwd {
+  animation: scroll 12s infinite ease;
 }
 
 .jadwal-bank {
@@ -547,4 +575,19 @@ ul.social-media li + li {
 .footer-bottom {
   padding: 2rem 0 3rem;
   background: #07090d;
+}
+
+.floating .floating-left {
+  position: fixed;
+  z-index: 1;
+  top: 92px;
+  left: 50%;
+  margin-left: -605px;
+}
+.floating .floating-right {
+  position: fixed;
+  z-index: 1;
+  top: 92px;
+  right: 50%;
+  margin-right: -605px;
 }
