@@ -88,6 +88,49 @@ hr {
 	padding: 2rem 0;
 }
 
+.top-menu {
+	margin-top: 4rem;
+}
+
+.top-menu ul {
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0;
+}
+
+.top-menu li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	margin-left: 1rem;
+}
+
+.top-menu li a {
+	display: block;
+	height: 36px;
+	line-height: 32px;
+	text-transform: uppercase;
+	border: 2px solid #039798;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 1rem;
+	min-width: 125px;
+	background: #134d67;
+	background: -moz-linear-gradient(top,rgba(19,77,103,1) 0%,rgba(4,32,39,1) 100%);
+	background: -webkit-linear-gradient(top,rgba(19,77,103,1) 0%,rgba(4,32,39,1) 100%);
+	background: linear-gradient(to bottom,rgba(19,77,103,1) 0%,rgba(4,32,39,1) 100%);
+}
+
+.top-menu li a:hover, .top-menu li a:hover {
+	background: #24768f;
+	background: -moz-linear-gradient(top,rgba(36,118,143,1) 0%,rgba(8,58,69,1) 100%);
+	background: -webkit-linear-gradient(top,rgba(36,118,143,1) 0%,rgba(8,58,69,1) 100%);
+	background: linear-gradient(to bottom,rgba(36,118,143,1) 0%,rgba(8,58,69,1) 100%);
+}
+
 /* .navigation {
 	background: #5c4da0;
 	background: -moz-linear-gradient(top, #3b236a 40%, #5c4da0 100%);
@@ -203,7 +246,7 @@ hr {
 	background: -webkit-linear-gradient(top, #2e3132 0%,#000000 100%);
 	background: linear-gradient(to bottom, #2e3132 0%,#000000 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e3132', endColorstr='#000000',GradientType=0 );
-	padding: 2rem 0;
+	padding: 2rem 0 3rem;
 }
 .footer-links ul {
 	margin: 0;
@@ -267,9 +310,7 @@ hr {
 }
 
 #content {
-	padding: 2rem 0;
-	min-height: 100%;
-	min-height: calc(100vh - 354px)
+	padding: 2rem 0 3rem;
 }
 
 .link-blocks + .link-blocks {
