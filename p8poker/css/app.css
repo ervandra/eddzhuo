@@ -1,7 +1,7 @@
 body {
 	background: #000 url(../images/background.jpg) no-repeat top center;
 	color: #acacac;
-	font-family: 'ProximaNova';
+	font-family: 'Play', 'ProximaNova';
 }
 
 h1,
@@ -10,8 +10,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Montserrat';
-	color: #9e6760;
+	font-family: 'Play', 'Montserrat';
+	color: #e6c882;
 }
 
 h1 {
@@ -49,7 +49,7 @@ h6 {
 
 .grid-container,
 hr {
-	max-width: 1150px;
+	max-width: 1020px;
 }
 
 .slick-nav {
@@ -136,7 +136,7 @@ hr {
 	color: #fff;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family: 'Montserrat';
+	font-family: 'Play', 'Montserrat';
 	text-align: center;
 	transition: all ease 0.3s;
 }
@@ -144,7 +144,7 @@ hr {
 	margin-left: 0.5rem;
 }
 #mainmenu ul li:hover > a,
-#mainmenu ul li:focus > a {
+#mainmenu ul li:focus > a, #mainmenu ul li.active > a {
 	background: rgba(255, 255, 255, 0.1);
 }
 
@@ -177,6 +177,8 @@ hr {
 	display: flex;
 	align-items: center;
 	padding: 0 1rem;
+	border-radius: 4px;
+	overflow: hidden;
 }
 .newsticker-container h5 {
 	margin: 0;
@@ -215,7 +217,7 @@ hr {
 	text-transform: uppercase;
 	white-space: nowrap;
 	font-size: 0.75rem;
-	font-family: 'Montserrat';
+	font-family: 'Play', 'Montserrat';
 }
 .footer-links ul li + li {
 	border-left: 1px solid #acacac;
@@ -237,7 +239,7 @@ hr {
 .footer-info h5 {
 	color:#acacac;
 	font-size:14px;
-	font-family:"ProximaNova";
+	font-family: 'Play',  "ProximaNova";
 	font-weight: bold;
 	margin:0 0 .25rem;
 }
@@ -286,4 +288,49 @@ hr {
 }
 .link-blocks a:hover img {
 	transform: translateY(-4px);
+}
+
+.internal {
+	padding: 1rem;
+	background: rgba(0,0,0,0.65);
+	border-radius: 10px;
+	color: #fff;
+}
+
+#content h1 {
+	font-size: 1.25rem;
+	color: #e6c882;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	margin: -1rem 0 1rem;
+}
+
+.contact-item {
+	margin-top: 240px;
+	height: 200px;
+	border-radius: 10px;
+	border: 2px solid #21a0ee;
+	background: #000;
+	position: relative;
+	text-align: center;
+	padding: 2.25rem 0 1rem;
+	white-space: nowrap;
+	margin: 240px 1rem 1rem;
+}
+.contact-character {
+	position: absolute;
+	top: -220px;
+	left: 50%;
+	margin-left: -91px;
+	z-index: 5;
+}
+.contact-icon {
+	margin-bottom: .5rem;
+}
+.contact-name {
+	font-weight: bold;
+}
+.contact-info a {
+	color: #fff;
 }
