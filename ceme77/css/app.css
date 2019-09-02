@@ -11,7 +11,7 @@ h4,
 h5,
 h6 {
   font-family: "Myriad Pro", "Montserrat";
-  color: #9e6760;
+  color: #f7b22f;
 }
 
 h1 {
@@ -622,50 +622,7 @@ select:focus {
 
 #content {
   padding: 1rem 0;
-  min-height: 80vh;
 }
-
-#content.bg1 {
-  background: url(../images/mainBg9.jpg) no-repeat top center;
-  background-size: cover;
-}
-
-.article h1 {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  height: 40px;
-  background: rgba(37, 96, 119, 0.63);
-  font-size: 20px;
-  color: #fff;
-  line-height: 40px;
-  text-align: center;
-  white-space: nowrap;
-  width: auto;
-  text-align: left;
-  padding: 0 1rem;
-}
-/* table {
-  letter-spacing: 1px;
-}
-table th,
-table td {
-  font-size: 0.875rem;
-}
-table th {
-  background-color: #032834;
-  color: #fff;
-  border: 1px solid #307da1;
-}
-table td {
-  background-color: #1c6080;
-  border: 1px solid #307da1;
-  color: #fff;
-  text-align: right;
-}
-table td.td-last {
-  text-align: center;
-} */
-
 
 table, table tbody, table tr, table tr td, table tbody tr:nth-child(even) {
   background: none;
@@ -797,4 +754,66 @@ p.txt-ps {
 #article-tabs .tabs-title > a[aria-selected="true"] {
   background: #d9534f;
   background: linear-gradient(to bottom, #c11, #d9534f);
+}
+
+#home-tables {
+  margin-bottom: 1rem;
+}
+
+.home-content {
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-secure {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.footer-copyright {
+  padding: .5rem 0;
+  background: #d79f34;
+  background: linear-gradient(to bottom, #e8c686, #d79f34);
+  color: #000;
+}
+
+.floating-contact {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  z-index: 150;
+}
+.floating-contact ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.floating-contact ul li {
+  display: block;
+  margin-bottom: .5rem;
+}
+.floating-contact ul li a {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+.floating-contact ul li a span {
+  display: block;
+}
+.floating-contact ul li a span.text {
+  opacity: 0;
+  width: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+.floating-contact ul li:hover a span.text {
+  opacity: 1;
+  width: auto;
+}
+.floating-contact ul li a span.icon {
+  margin-right: .5rem;
+}
+.floating-contact ul li a span.text:hover {
+  text-decoration: underline;
 }
