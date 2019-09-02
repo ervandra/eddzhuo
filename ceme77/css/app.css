@@ -790,26 +790,38 @@ p.txt-ps {
 }
 .floating-contact ul li {
   display: block;
-  margin-bottom: .5rem;
 }
 .floating-contact ul li a {
   display: flex;
+  padding: .25rem .25rem;
+  padding-right: .75rem;
   white-space: nowrap;
-  align-items: center;
+  align-items: stretch;
   color: #fff;
   font-weight: bold;
+  transition: all ease .3s;
+  border-radius: 0 8px 8px 0;
 }
 .floating-contact ul li a span {
   display: block;
+  transition: all ease .3s;
 }
 .floating-contact ul li a span.text {
   opacity: 0;
   width: 0;
   text-shadow: 1px 1px 1px #000;
+  transition: all ease .3s;
+  height: 38px;
+  line-height: 38px;
+  font-size: .75rem;
 }
 .floating-contact ul li:hover a span.text {
   opacity: 1;
   width: auto;
+}
+.floating-contact ul li:hover a {
+  background: rgba(0,0,0,.9);
+  box-shadow: 3px 3px 4px rgba(255,255,255, .3);
 }
 .floating-contact ul li a span.icon {
   margin-right: .5rem;
