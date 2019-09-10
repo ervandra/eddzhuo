@@ -124,14 +124,27 @@ hr {
   color: #222;
 }
 
-[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'] {
+[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"] {
   height: 28px;
   line-height: 26px;
   border: 1px solid #d20000;
   border-radius: 6px;
   box-shadow: none;
   text-align: center;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 #header {
@@ -143,9 +156,10 @@ hr {
   background: #790000;
   border-radius: 0 0 8px 8px;
 }
-.login-header .button, .login-header input {
+.login-header .button,
+.login-header input {
   margin-bottom: 0;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .login-header .button.btn-yellow {
   margin-right: 0;
@@ -160,7 +174,7 @@ hr {
 }
 
 .line-padding {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .newsticker {
   display: flex;
@@ -185,7 +199,7 @@ hr {
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 #mainmenu ul li {
@@ -208,7 +222,8 @@ hr {
   display: block;
 }
 
-#mainmenu ul li:hover > a, #mainmenu ul li.active > a {
+#mainmenu ul li:hover > a,
+#mainmenu ul li.active > a {
   color: #fff;
 }
 
@@ -217,7 +232,6 @@ hr {
   position: absolute;
   z-index: 90;
   background: #d20000;
-  
 }
 
 #mainmenu ul li:hover > ul {
@@ -227,7 +241,7 @@ hr {
 #mainmenu ul ul li {
   text-align: left;
   text-transform: capitalize;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 #mainmenu ul ul li + li {
   border: none;
@@ -262,7 +276,7 @@ hr {
   line-height: 40px;
   margin: 0;
   text-align: center;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .iklan {
@@ -273,14 +287,13 @@ hr {
   width: 100%;
 }
 
-
 .promo-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .promo-container > div + div {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 .promo-container .promo-item {
   width: 216px;
@@ -294,7 +307,7 @@ hr {
   background: #d20000;
   background: linear-gradient(to bottom, #ff3c15, #d20000);
   color: #fff;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   border-radius: 10px;
 }
 
@@ -305,12 +318,12 @@ hr {
 
 .promo-item a span.title {
   font-size: 1.25rem;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   font-weight: bold;
 }
 
 .promo-item a span.text {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .promo-livechat > a {
@@ -321,7 +334,7 @@ hr {
   display: block;
   position: absolute;
   z-index: 5;
-  right: .5rem;
+  right: 0.5rem;
   background: url(../images/livechat.png) no-repeat;
   background-size: cover;
   width: 67px;
@@ -375,17 +388,22 @@ hr {
   text-transform: uppercase;
 }
 
-table tbody, table thead, table tr, table td {
+table tbody,
+table thead,
+table tr,
+table td {
   background: none !important;
 }
-table thead, table tbody {
+table thead,
+table tbody {
   border: none;
 }
 table thead {
   border-bottom: 1px solid #ccc;
 }
 
-table th, table td {
+table th,
+table td {
   color: #fff;
 }
 table th {
@@ -419,7 +437,7 @@ ul.contact-us li {
   display: block;
 }
 ul.contact-us li + li {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 ul.contact-us li a {
@@ -434,18 +452,18 @@ ul.contact-us li a .icon {
   overflow: hidden;
   line-height: 38px;
   text-align: center;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   background: #d20000;
   background: linear-gradient(to bottom, #ff3c15, #d20000);
 }
 ul.contact-us li a .text {
   display: block;
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1.2;
 }
 ul.contact-us li a .text strong {
   display: block;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .table-container {
@@ -460,4 +478,21 @@ ul.contact-us li a .text strong {
 .secure-icon {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.floating-ads {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 99;
+  background: #000;
+  overflow: hidden;
+}
+.floating-ads a {
+  display: block;
+  transition: all ease 0.1s;
+  transform-origin: 50% 50%;
+}
+.floating-ads a:hover {
+  transform: scale(1.1);
 }
