@@ -161,6 +161,9 @@ hr {
   margin-bottom: 0;
   margin-right: 0.5rem;
 }
+.login-header input {
+  max-width: 132px;
+}
 .login-header .button.btn-yellow {
   margin-right: 0;
 }
