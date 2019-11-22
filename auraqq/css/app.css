@@ -171,7 +171,7 @@ hr {
 
 #mainmenu ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -179,10 +179,10 @@ hr {
 
 #mainmenu ul li {
   display: block;
-  flex: 1;
+  flex: 1 1 100px;
   text-align: center;
-  white-space: nowrap;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
+  width: 100px;
 }
 
 #mainmenu ul li a {
@@ -195,10 +195,11 @@ hr {
 
 #mainmenu ul li.logo {
   position: relative;
+  width: 400px;
 }
 #mainmenu ul li.logo a {
   padding: 0.875rem 1rem 3.125rem;
-  width: 360px;
+  width: 400px;
 }
 
 #mainmenu ul li:hover > a,
@@ -299,4 +300,18 @@ td {
   text-align: center;
   font-size: 0.75rem;
   line-height: 1.4;
+}
+
+@media only screen and (max-width: 48em) {
+  #mainmenu ul li {
+    font-size: 0.625rem;
+    flex: 0;
+  }
+  #mainmenu ul li.logo {
+    width: 40%;
+    flex: 1 1 40%;
+  }
+  #mainmenu ul li.logo a {
+    width: 100%;
+  }
 }
