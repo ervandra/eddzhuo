@@ -1,0 +1,282 @@
+/* CSS by Ervandra Halim */
+
+body {
+  color: #af925d;
+  background: #000 url(../images/back.jpg) no-repeat top center;
+  background-size: 100% auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: bold;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.125rem;
+}
+h3 {
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+
+#header {
+  margin: 0 auto;
+  background: #131313;
+  background: #000 url(../images/bg-header.png) repeat top center;
+  background-repeat: repeat-x;
+  margin-bottom: 1rem;
+  border-bottom: 6px solid #eed37c;
+}
+.logo {
+  width: 240px;
+}
+.logo img {
+  width: 240px;
+  height: 80px;
+}
+.top-nav {
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+.top-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.top-nav li {
+  display: block;
+  margin-right: 1rem;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 22px;
+  font-weight: bold;
+}
+.yu-date {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 15px;
+  line-height: 20px;
+}
+.navigation {
+  padding-left: 20px;
+}
+#mainmenu {
+  background: #e7c687;
+  background: linear-gradient(to bottom, #e7c687, #593d0c 46%, #6d4d1a 77%, #ba954e);
+  border: 1px solid #593d0c;
+  border-bottom: none;
+  position: relative;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px -5px 6px rgba(0, 0, 0, 1.18);
+  overflow: hidden;
+}
+#mainmenu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#mainmenu li {
+  display: block;
+  flex: auto;
+}
+#mainmenu li + li {
+  border-left: 1px solid #000;
+}
+#mainmenu li > a {
+  display: block;
+  line-height: 45px;
+  text-align: center;
+  color: #af925d;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#mainmenu li:hover > a,
+#mainmenu li:focus > a,
+#mainmenu li.active > a {
+  background: #eed37c;
+  background: linear-gradient(to bottom, transparent, #eed37c 50%);
+  color: #000;
+}
+#mainmenu ul ul {
+  display: none;
+}
+.orbit-bullets {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.yu-vertical-banner {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.yu-slideshow {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.banner-block {
+  margin: 1rem 0;
+  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); */
+  background: #e7c687;
+  background: linear-gradient(
+    to bottom,
+    #fff59e,
+    #917954 12%,
+    #644202 26%,
+    #fff59e 41%,
+    #694809 45%,
+    #9d7f45 88%,
+    #fff59e
+  );
+  padding: 3px;
+  position: relative;
+}
+.banner-block img {
+  height: 250px;
+  width: 100%;
+}
+.banner-block .lottery table img {
+  height: 18px;
+  width: 18px;
+}
+.lottery-table {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.lottery-table table {
+  width: 180px;
+}
+.lottery-table table,
+.lottery-table table tbody {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.lottery-table table tr,
+.lottery-table table td {
+  background: none !important;
+}
+.lottery-table table td {
+  padding: 0 0 1px;
+  line-height: 1;
+  font-size: 0.6875rem;
+  text-align: right;
+}
+.lottery-table .lotterygames {
+  font-weight: bold;
+  color: #ffd300;
+}
+.lottery-table .lotterydate {
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+}
+.klik-link {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.copyright {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #af925d;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+#maincontent {
+  padding: 2rem 0;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0 0 2rem;
+  border: 2px solid #000;
+  border-radius: 12px;
+  color: #af925d;
+}
+#maincontent h1,
+#maincontent h2,
+#maincontent h3 {
+  color: #af925d;
+}
+#maincontent p {
+  line-height: 1.2;
+  text-align: justify;
+}
+#maincontent.single {
+  padding: 2rem;
+}
+#maincontent.single h1 {
+  font-size: 26px;
+  line-height: 60px;
+  color: #af925d;
+  text-align: center;
+}
+#maincontent.single hr {
+  border-color: #dbad89;
+}
+#maincontent.single h2 {
+  font-size: 18px;
+  color: #dbad89;
+}
+#maincontent.single h3 {
+  font-size: 18px;
+  color: #dbad89;
+}
+#maincontent.single h4 {
+  font-size: 15px;
+  color: #dbad89;
+}
+#maincontent.single ul {
+  display: inline-block;
+  text-align: left;
+  color: #dbad89;
+}
+#maincontent.single h2,
+#maincontent.single h3 {
+  margin-top: 2rem;
+}
+#maincontent.single p {
+  font-size: 18px;
+  color: #dbad89;
+  font-size: 15px;
+}
+
+.news-list {
+  margin-bottom: 1.5rem;
+}
+.news + .news {
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem;
+}
+
+.news img {
+}
+
+.pagination {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ccc;
+}
+.pagination a {
+  color: #fff;
+}
+.pagination a:hover,
+.pagination a:focus {
+  color: #333;
+}
+
+.pagination li.current {
+  color: #fff !important;
+}
