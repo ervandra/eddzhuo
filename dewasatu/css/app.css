@@ -280,3 +280,72 @@ p {
 .pagination li.current {
   color: #fff !important;
 }
+
+@media only screen and (max-width: 48em) {
+  #header .grid-x {
+    flex-wrap: wrap;
+  }
+  #header .grid-x > .cell {
+    flex: 1 1 100%;
+  }
+  .logo {
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+  }
+  .logo img {
+    width: auto;
+    height: 48px;
+  }
+  .navigation {
+    padding: 0;
+  }
+  .yu-date {
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .top-nav {
+    margin: 0 0 10px;
+    display: none;
+  }
+  .top-nav ul {
+    justify-content: center;
+  }
+  .top-nav li {
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: none;
+  }
+  #mainmenu {
+    margin-bottom: 1rem;
+    border-radius: 0;
+    margin: 0 -0.5rem 0;
+    border: none;
+  }
+  #mainmenu ul li {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  #mainmenu li > a {
+    font-size: 12px;
+    text-transform: none;
+    line-height: 32px;
+    font-weight: normal;
+  }
+  .yu-slideshow {
+    margin-bottom: 15px;
+  }
+  .yu-vertical-banner .v-banner img {
+    width: 100%;
+  }
+  #maincontent h1,
+  #maincontent h2,
+  #maincontent h3 {
+    font-size: 16px;
+  }
+  #maincontent p {
+    font-size: 12px;
+  }
+}
