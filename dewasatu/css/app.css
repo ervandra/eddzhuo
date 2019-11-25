@@ -337,8 +337,15 @@ p {
   .yu-slideshow {
     margin-bottom: 15px;
   }
+  .v-banner {
+    padding: 0 2rem;
+    margin-bottom: 1.5rem;
+  }
   .yu-vertical-banner .v-banner img {
     width: 100%;
+  }
+  .banner-block {
+    margin: 0 2rem 1.5rem;
   }
   #maincontent h1,
   #maincontent h2,
