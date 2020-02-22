@@ -9,8 +9,125 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <!-- Import other AMP Extensions here -->
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <style amp-custom>
     /* Add your styles here */
+    body {
+      background: #000;
+      font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: #fff;
+    }
+
+    a {
+      color: rgba(254, 153, 17, 1);
+    }
+
+    header {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      ;
+    }
+
+    header .hamburger {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    header .logo {
+      text-align: center;
+      flex: 1;
+    }
+
+    header .logo img {
+      max-height: 48px;
+    }
+
+    header .top-nav .button {
+      line-height: 36px;
+      padding: 0 8px;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 14px;
+      border: 2px solid rgba(254, 153, 17, 1);
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      color: rgba(254, 153, 17, 1);
+      font-weight: bold;
+    }
+
+
+    nav [toolbar] {
+      overflow: auto;
+    }
+
+    #sidebar1 {
+      width: 80vw;
+      background: #222;
+    }
+
+    img {
+      max-width: 100%;
+      display: inline-block;
+      height: auto;
+    }
+
+    main {
+      padding: 0 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-us {
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .contact-us h3 {
+      color: rgba(254, 153, 17, 1);
+      margin: 0 0 15px;
+      text-transform: uppercase;
+    }
+
+    .contact-us p {
+      color: rgba(254, 153, 17, 1);
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .contact-us p amp-img {
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    .links p {
+      margin-bottom: 20px;
+    }
+
+    .maincontent {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .footer {
+      background: #fff;
+      color: #000;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .copyright {
+      font-size: 11px;
+    }
+
+    .justify {
+      text-align: justify;
+    }
   </style>
   <style amp-boilerplate>
     body {
@@ -18,7 +135,6 @@
       -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
       -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
       animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      background: #000;
     }
 
     @-webkit-keyframes -amp-start {
@@ -76,7 +192,7 @@
         -webkit-animation: none;
         -moz-animation: none;
         -ms-animation: none;
-        animation: none
+        animation: none;
       }
     </style>
   </noscript>
@@ -116,19 +232,150 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <button class="hamburger" on="tap:sidebar1.toggle">&#9776;</button>
+    <div class="logo"><a href="/">
+        <amp-img src="images/logo.png" alt="Betking88" height="40" width="120"></amp-img>
+      </a></div>
+    <div class="top-nav">
+      <a href="#" class="button btn-daftar">Daftar Akun </a>
+    </div>
+  </header>
   <main id="content" role="main" class="">
-    <img src="images/banner1.jpg" alt="">
-    <nav>
+    <div class="contact-us">
+      <h3>Hubungi Kami:</h3>
+      <p>
+        <a href="#">
+          <amp-img width="16" height="16" src="images/amp/icon-bbm.png"></amp-img> : 211123bc
+        </a>
+      </p>
+      <p>
+        <a href="#">
+          <amp-img width="16" height="16" src="images/amp/icon-line.png"></amp-img> : @betking88
+        </a>
+      </p>
+      <p>
+        <a href="#">
+          <amp-img width="16" height="16" src="images/amp/icon-wa.png"></amp-img> : +62817231923
+        </a>
+      </p>
+    </div>
+    <div class="banner">
+      <p>
+        <a href="#">
+          <amp-img src="images/amp/banner2.gif" alt="Welcome" layout="responsive" height="90" width="728"></amp-img>
+        </a>
+      </p>
+      <p>
+        <a href="#">
+          <amp-img src="images/amp/banner3.png" alt="Welcome" layout="responsive" height="480" width="980"></amp-img>
+        </a>
+      </p>
+    </div>
+
+    <div class="links">
+      <p>
+        <a href="#">
+          <amp-img src="images/amp/btn-daftar.png" width="300" height="89" layout="responsive"></amp-img>
+        </a>
+      </p>
+      <p>
+        <a href="#">
+          <amp-img src="images/amp/btn-livechat.png" width="300" height="89" layout="responsive"></amp-img>
+        </a>
+      </p>
+      <p>
+        <a href="#">
+          <amp-img src="images/amp/btn-wa-depo.png" width="300" height="89" layout="responsive"></amp-img>
+        </a>
+      </p>
+      <p>
+        <a href="#">
+          <amp-img src="images/amp/btn-wa-withdraw.png" width="300" height="89" layout="responsive"></amp-img>
+        </a>
+      </p>
+      <p>
+        <a href="#">
+          <amp-img src="images/amp/btn-depo-withdraw.png" width="300" height="89" layout="responsive"></amp-img>
+        </a>
+      </p>
+    </div>
+    <hr />
+    <div class="maincontent">
+      <h3><strong>HOT PROMO SPORTSBOOK 2020</strong></h3>
+      <p><strong>Bonus New Member 30%</strong></p>
       <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
-        <li><a href="#">Link 5</a></li>
+        <li>Bonus berlaku untuk member baru deposit pertama</li>
+        <li>Bonus tidak mendapatkan bonus rollingan dan bonus cashback</li>
+        <li>Bonus maksimal yang kami berikan 3.000.000</li>
+        <li>Bonus diberikan di “akhir” apabila telah mencapai turnover 6x</li>
+        <li>Minimal deposit 100.000</li>
+        <li>Contoh perhitungan: deposit 1.000.000 + bonus 30% 300.000 x turnover 6 = 7.800.000</li>
+        <li>Tidak diperbolehkan untuk melakukan safety bet / bet kanan kiri</li>
+      </ul>
+      <h4><strong>Bonus Mix Parlay SBOBET 2020!! Menang Parlay Dapat 5jt</strong></h4>
+      <ul>
+        <li>Promo berlaku untuk 12 – 15 partai</li>
+        <li>Bayaran kemenangan minimal x3600</li>
+        <li>CONTOH: pemasangan 10rb x 3600 = 36.000 Pembayaran kemenangan 36jt untuk dapat mengikuti promo mix parlay
+        </li>
+        <li>Paket parlay harus menang full (menang setengah, kalah setengah, dan seri promo dianggap hangus)</li>
+      </ul>
+      <h4><strong>Bonus Mendapatkan ASUS ROG Phone 2</strong></h4>
+      <ul>
+        <li>Adalah promo bonus yang diberikan kepada member setia kami yang telah meraih kemenangan 500 juta dalam
+          sebulan
+          akan mendapatkan 1 unit ASUS ROG Phone 2. Kemenangan ini diakumulasikan dalam satu bulan selama anda bermain,
+          dalam artian dihitung dari kemenangan dan kekalahan anda selama satu bulan.</li>
+      </ul>
+      <p><strong>Bonus Sportsbook Special Betking88</strong> :<br>• Bonus Cashback 5% sampai 10%<br>• Bonus Rollingan
+        0.25%</p>
+      <p><strong>Bonus Casino dan Slot Online :</strong><br>• Cashback 5% sampai 10% (Casino dan Slot games)<br>• Bonus
+        Rollingan Casino 0.8%<br>• Bonus Rollingan Slot Game 0.25%</p>
+      <p><strong>Discount Potongan Togel</strong> :<br>• 2D:30.6%<br>• 3D:59.5%<br>• 4D:66%</p>
+      <p><strong>Bonus Bola Tangkas :</strong><br>• Cashback 5%</p>
+      <p><strong>Bonus Refferal Betking88 :</strong><br>• Referral Sportsbook 5% <br>• Referral Live Casino 3%</p>
+      <h3>ABOUT BETKING88</h3>
+      <p class="justify">Betking88.online merupakan Situs SBOBET Terpercaya di Indonesia. Kami merupakan <a
+          href="http://www.betking88.online/">Agen SBOBET</a> Casino Online &amp; Judi Bola Online. Kami menyediakan
+        jasa
+        pembuatan akun judi online cepat dan aman sehingga anda dapat bermain judi bola online maupun SBOBET Casino
+        sepuasnya. Agen Bola Indonesia Betking88.biz dikenal sebagai situs judi bola online terpercaya melayani member
+        dengan cepat dan ada promo bagi member baru. Ayo ikut menjadi pemenang bersama Agen Judi Bola Online
+        betking88.online.</p>
+      <hr />
+      <p class="justify">Betking88.online adalah Agen SBOBET Terpercaya Online di Indonesia. Kami menyediakan layanan
+        SBOBET Casino Online. Bagi anda yang tertarik dengan produk SBOBET Casino online kami, dapat membuat akun judi
+        SBOBET online disini. Kami akan proses cepat tanpa perlu waktu lama. Sebagai Agen SBOBET Terbaik, kami mempunyai
+        visi untuk meningkatkan kualitas layanan casino online dan judi bola online kami. Sudah saatnya anda bergabung
+        bersama www.betking88.online untuk mendapatkan akun SBOBET Online. Raih keuntungan berlipat ganda disini.
+        Transaksi deposit dan withdraw Betking88 dapat berjalan dengan lancar asalkan anda melakukan transfer saat jam
+        bank online. Pastikan anda konfirmasi menanyakan rekening bank saat hendak melakukan deposit supaya mempermudah
+        pengecekan oleh bagian billing agen SBOBET Betking88.online. Betking88.online dikenal sebagai situs judi bola
+        online terpercaya dengan pengalaman 10 tahun lamanya. Kami bukanlah bandar judi bola melainkan hanyalah agen
+        bola
+        terpercaya di Indonesia menangani pendaftaran member taruhan bola SBOBET online. Jangan ragu bergabung menjadi
+        bagian dari keluarga besar situs agen SBOBET terpercaya casino online &amp; judi bola online BETKING88.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="copyright">All Rights Reserved | <a class="view-non-amp" href="#" rel="nofollow"
+        title="View Non-AMP Version">View Non-AMP Version</a>
+    </div>
+  </footer>
+
+  <amp-sidebar id="sidebar1" layout="nodisplay">
+    <nav toolbar="(max-width: 767px)">
+      <ul>
+        <li><a href="#">Nav item 1</a></li>
+        <li><a href="#">Nav item 2</a></li>
+        <li><a href="#">Nav item 3</a></li>
+        <li><a href="#">Nav item 4</a></li>
+        <li><a href="#">Nav item 5</a></li>
       </ul>
     </nav>
-  </main>
+  </amp-sidebar>
 </body>
 
 </html>
