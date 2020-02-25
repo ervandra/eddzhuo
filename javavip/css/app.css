@@ -151,8 +151,6 @@ hr {
   font-size: 0.875rem;
 }
 
-#header {
-}
 .top-header {
   background: linear-gradient(to top, #070606, #420303);
   padding: 3rem 0;
@@ -177,6 +175,10 @@ hr {
   display: flex;
   align-items: center;
   line-height: 1.2;
+  transition: all ease-in-out .3s;
+}
+.contact-header li a:hover {
+  color: #ffba00
 }
 .contact-header .icon {
   margin-right: 0.5rem;
