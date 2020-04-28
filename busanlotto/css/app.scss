@@ -390,3 +390,176 @@ hr {
   font-size: 12px;
   line-height: 1.5;
 }
+
+.article {
+  padding: 1rem;
+  box-shadow: 2px 2px 8px 1px rgba(0,0,0,.3);
+  background: grey;
+  color: #ddd;
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+}
+
+.search {
+  margin-bottom: 1rem;
+  > div {
+    display: flex;
+    align-items: center;
+    > span {
+      margin-right: 1rem;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+    }
+    input {
+      display: inline-block;
+      max-width: 200px;
+      height: 2rem;
+      line-height: 2rem;
+      padding: 0 .5rem;
+      border-radius: 0;
+      margin: 0;
+      box-shadow: none;
+      border: none;
+      &:hover, &:focus {
+        box-shadow: none;
+        border: none;
+      }
+    }
+    button {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      padding: 0;
+      background: maroon;
+      color: #fff;
+      border-radius: 0;
+    }
+  }
+}
+
+#search {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -.5rem;
+
+  .result-wrap {
+    flex: 1 1 33.3333%;
+    padding: 0 .5rem;
+  }
+  .result-body {
+    margin-bottom: 1rem;
+    background: #333;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: .5rem 0 0;
+    .draw-no, .draw-date {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .item-wrap {
+      padding-top: .5rem;
+    }
+    .prize-item {
+      table {
+        background: none;
+        border: none;
+        margin: 0;
+        tbody {
+          display: flex;
+          background: none;
+          border: none;
+          tr {
+            display: block;
+            flex: 1 1 33.3333%;
+            background: none !important;
+            td {
+              display: block;
+              padding: 0;
+              line-height: 30px;
+              &.price-title {
+                background: maroon;
+                color: #fff;
+              }
+              &.single-num {
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing:3px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .prize {
+      .header {
+        background: maroon;
+        line-height: 30px;
+        color: #fff;
+        margin: 0;
+        font-weight: bold;
+      }
+      table {
+        background: none;
+        border: none;
+        margin: 0;
+        tbody {
+          background: none;
+          border: none;
+          tr {
+            background: none !important;
+            td {
+              padding: 0 1%;
+              line-height: 36px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.paging {
+  flex: 1 1 100%;
+  padding: 1rem;
+}
+.pagination {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  input.txtPagingControl {
+    width: 120px;
+    padding: 0 .5rem;
+    text-align: center;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    line-height: 32px;
+    height: 32px;
+    &:hover, &:focus {
+      border:none;
+      box-shadow: none;
+    }
+  }
+  input.btnPagingNext, input.btnPagingLast {
+    margin-left: 1rem;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 1rem;
+    color: #fff;
+    background: maroon;
+    border: none;
+  }
+}

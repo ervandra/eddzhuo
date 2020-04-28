@@ -487,4 +487,224 @@ hr {
   font-size: 12px;
   line-height: 1.5;
 }
+
+.article {
+  padding: 1rem;
+  -webkit-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+  background: grey;
+  color: #ddd;
+}
+
+.article h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.search {
+  margin-bottom: 1rem;
+}
+
+.search > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search > div > span {
+  margin-right: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.search > div input {
+  display: inline-block;
+  max-width: 200px;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 .5rem;
+  border-radius: 0;
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.search > div input:hover, .search > div input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.search > div button {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 0;
+  background: maroon;
+  color: #fff;
+  border-radius: 0;
+}
+
+#search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -.5rem;
+}
+
+#search .result-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.3333%;
+          flex: 1 1 33.3333%;
+  padding: 0 .5rem;
+}
+
+#search .result-body {
+  margin-bottom: 1rem;
+  background: #333;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: .5rem 0 0;
+}
+
+#search .result-body .draw-no, #search .result-body .draw-date {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#search .result-body .item-wrap {
+  padding-top: .5rem;
+}
+
+#search .result-body .prize-item table {
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+#search .result-body .prize-item table tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  border: none;
+}
+
+#search .result-body .prize-item table tbody tr {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.3333%;
+          flex: 1 1 33.3333%;
+  background: none !important;
+}
+
+#search .result-body .prize-item table tbody tr td {
+  display: block;
+  padding: 0;
+  line-height: 30px;
+}
+
+#search .result-body .prize-item table tbody tr td.price-title {
+  background: maroon;
+  color: #fff;
+}
+
+#search .result-body .prize-item table tbody tr td.single-num {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+#search .result-body .prize .header {
+  background: maroon;
+  line-height: 30px;
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+}
+
+#search .result-body .prize table {
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+#search .result-body .prize table tbody {
+  background: none;
+  border: none;
+}
+
+#search .result-body .prize table tbody tr {
+  background: none !important;
+}
+
+#search .result-body .prize table tbody tr td {
+  padding: 0 1%;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.paging {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 1rem;
+}
+
+.pagination {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination input.txtPagingControl {
+  width: 120px;
+  padding: 0 .5rem;
+  text-align: center;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  line-height: 32px;
+  height: 32px;
+}
+
+.pagination input.txtPagingControl:hover, .pagination input.txtPagingControl:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pagination input.btnPagingNext, .pagination input.btnPagingLast {
+  margin-left: 1rem;
+  line-height: 32px;
+  height: 32px;
+  padding: 0 1rem;
+  color: #fff;
+  background: maroon;
+  border: none;
+}
 /*# sourceMappingURL=app.css.map */
