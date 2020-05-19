@@ -1,0 +1,367 @@
+:root, html {
+  --white: #ffffff;
+  --red: #ff0000;
+  --blue: #174183;
+  --lightBlue: #5a9ff9;
+  --black: #000000;
+  --grey: #adadad;
+  --softGrey: #ddd;
+  --border: #ccc;
+
+  --xs: .75rem;
+  --sm: .875rem;
+  --md: 1rem;
+  --lg: 1.125rem;
+  --xl: 1.25rem;
+  --xxl: 1.375rem;
+
+  --radius: 4px;
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: var(--white);
+  background-attachment: fixed;
+  color: var(--black);
+  font-family: "PT Sans", "ProximaNova", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans", "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--black)  ;
+}
+
+h1 {
+  font-size: var(--xxl);
+}
+h2 {
+  font-size: var(--xl);
+}
+h3 {
+  font-size: var(--lg);
+}
+h4 {
+  font-size: var(--md);
+}
+h5 {
+  font-size: var(--sm);
+}
+h6 {
+  font-size: var(--xs);
+}
+.button.alert {
+  color: var(--white);
+  background: var(--red);
+}
+.button.alert:hover,
+.button.alert:focus {
+  color: var(--white);
+}
+.button.success {
+  color: var(--white);
+}
+.button.success:hover,
+.button.success:focus {
+  color: var(--white);
+}
+
+.grid-container,
+hr {
+  max-width: 830px;
+}
+
+.slick-nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 30rem;
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--black);
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 93;
+  transition: all ease 0.1s;
+  cursor: pointer;
+}
+.slick-nav:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transition: all ease 0.3s;
+}
+.slick-prev {
+  left: 2rem;
+  padding-right: 4px;
+}
+.slick-next {
+  right: 2rem;
+  padding-left: 4px;
+}
+
+#header {
+  padding: 1rem 0;
+  background: var(--white);
+  border-bottom: 2px solid var(--lightBlue);
+  .top-header {
+    .today {
+      text-align: right;
+      font-weight: bold;
+      font-size: var(--xs);
+      margin-bottom: .25rem;
+    }
+  }
+  #mainmenu {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      li {
+        display: block;
+        + li {
+          margin-left: 1rem;
+        }
+        a {
+          color: var(--grey);
+          font-weight: bold;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+        &:hover, &.active {
+          a {
+            color: var(--body);
+          }
+        }
+      }
+    }
+  }
+}
+
+#content {
+  background: var(--white) url(../images/bg.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  overflow-y: auto;
+  min-height: calc(100vh - 180px);
+}
+
+.maincontent {
+  padding: 1rem;
+  background: #adadadcc;
+  position: relative;
+  .section {
+    padding: 1rem;
+    background: var(--white);
+    border-radius: var(--radius);
+    + .section {
+      margin-top: 1rem;
+    }
+  }
+}
+
+
+.table-container {
+  table {
+    margin: 0;
+    tr {
+      th, td {
+        text-align: center;
+        white-space: nowrap;
+        padding: .5rem .375rem;
+        b {
+          font-weight: normal;
+        }
+        > div {
+          display: flex;
+          align-items: center;
+          > .numberCircle2 {
+            float: none !important;
+          }
+          &:after {
+            content:'';
+            display: block;
+            clear: both;
+          }
+        }
+      }
+      td:first-child {
+        text-align: left;
+      }
+    }
+    tbody {
+      border: none;
+      tr:nth-child(odd) {
+        background: var(--softGrey);
+      }
+      tr:nth-child(even) {
+        background: var(--white);
+      }
+    }
+  }
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    li {
+      display: block;
+      font-weight: bold;
+      + li {
+        margin-left: 1rem;
+      }
+      a {
+        color: var(--grey);
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &:hover, &.active {
+        a {
+          color: var(--black);
+        }
+      }
+    }
+  }
+  h5 {
+    margin: 0;
+  }
+  padding: .5rem 1rem 1rem;
+  border-bottom: 1px solid var(--grey);
+  .winning-number {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 .25rem;
+      display: block;
+      background: var(--white);
+      font-weight: bold;
+      font-size: var(--lg);
+      border-radius: 30rem;
+      width: 2rem;
+      height: 2rem;
+      border: 2px solid var(--border);
+      text-align: center;
+      line-height: 1.875rem;
+      &.red {
+        background: var(--red);
+        color: var(--white);
+      }
+    }
+  }
+  .button {
+    margin: 0;
+    &.btn-check {
+      padding: .5rem;
+      font-weight: bold;
+      background: var(--blue);
+      text-transform: uppercase;
+      font-size: var(--xs);
+    }
+  }
+}
+
+span {
+  &.numberCircle2 {
+    margin: 0 .125rem;
+    display: inline-block;
+    background: var(--white);
+    font-weight: bold;
+    font-size: var(--md);
+    border-radius: 30rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 2px solid var(--border);
+    text-align: center;
+    line-height: 1.5rem;
+    &.red {
+      background: var(--red);
+      color: var(--white);
+    }
+  }
+}
+
+#footer {
+  .footer-container {
+    text-align: right;
+    padding: 1rem 0;
+    background: url(../images/footer.png) no-repeat center left;
+    background-size: auto 100%;
+  }
+  .copyright {
+    font-size: var(--sm);
+    font-weight: bold;
+    a {
+      color: var(--body);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.section p {
+  font-size: var(--sm);
+}
+
+.iklan {
+  position: absolute;
+  top: .5rem;
+  img {
+    width: 160px;
+    height: auto;
+  }
+  &.iklan-kiri {
+    left: -168px;
+  }
+  &.iklan-kanan {
+    right: -168px;
+
+  }
+}

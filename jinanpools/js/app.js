@@ -34,6 +34,7 @@ jQvan(document).ready(function ($) {
 
   function showInfo(data) {
     // alert('Successfully processed!')
+    console.log(data);
     if (data && data.length > 0) {
       const winner1st = data[0].livedraw !== '' ? data[0].livedraw : '000000';
       $('#winner-1st').text(winner1st);
