@@ -448,7 +448,7 @@ table tbody tr.boxday-tr3 {
 
 .secondary-winner-container .secondary-section h5 {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: normal;
   background: #0e1ddb;
   color: #fff;
   padding: 0 1rem;
@@ -859,17 +859,16 @@ table tbody tr.boxday-tr3 {
 
 #search .result-wrap {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 33.3333%;
-          flex: 1 1 33.3333%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   padding: 0 0.5rem;
 }
 
 #search .result-body {
   margin-bottom: 1rem;
-  background: rgba(0, 0, 0, 0.52);
-  border: 1px solid #ddd;
+  background: #fff;
   text-align: center;
-  padding: 0.5rem 0 0;
+  color: #000;
 }
 
 #search .result-body .draw-no,
