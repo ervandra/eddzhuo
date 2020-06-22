@@ -533,4 +533,8 @@ hr {
   color: var(--red);
   text-decoration: underline;
 }
+
+.content-bottom {
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=app.css.map */
