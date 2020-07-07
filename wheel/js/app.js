@@ -69,8 +69,8 @@ jQuery(document).ready(function ($) {
     var username = $('#username').val();
     var email = $('#email').val();
     const url = `http://a100tech.com/wheel/?username=${username}&email=${email}`;
-    const y = window.top.outerHeight / 2 + window.top.screenY - 389;
-    const x = window.top.outerWidth / 2 + window.top.screenX - 512;
-    window.open(url, 'blank', `location=yes,height=768,width=1024,scrollbars=yes,status=yes,left=${x}, top=${y}`);
+    $('#modal-wheel').find('iframe').attr('src', url)
+    $('#modal-wheel').foundation('open');
+    // window.open(url, 'blank', `location=yes,height=768,width=1024,scrollbars=yes,status=yes,left=${x}, top=${y}`);
   })
 })

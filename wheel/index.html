@@ -26,10 +26,19 @@
               <h3>Get your chance to <strong>win a prize!</strong></h3>
               <p>Fill in your username and registered email, and spin your luck!</p>
               <form id="form-wheel" action="#">
-                <input type="text" id="username" placeholder="username" name="username">
-                <input type="email" id="email" placeholder="email" name="email">
+                <input type="text" id="username" placeholder="username" name="username" required>
+                <input type="email" id="email" placeholder="email" name="email" required>
                 <button class="button large success" type="submit">Try Your Luck</button>
               </form>
+            </div>
+            <div class="reveal large" id="modal-wheel" data-reveal>
+              <div class="responsive-embed">
+                <iframe width="420" height="315" src="http://a100tech.com/wheel/" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
           </div>
         </div>
