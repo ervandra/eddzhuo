@@ -331,3 +331,42 @@ img {
     }
   }
 }
+
+.floating {
+  position: fixed;
+  top: 50vh;
+  transition: all ease 0.3s;
+  transform: translateY(-50%);
+  &.floating-left {
+    left: -120px;
+    width: 120px;
+    &.show {
+      left: 0;
+    }
+  }
+  &.floating-right {
+    right: -200px;
+    width: 200px;
+    &.show {
+      right: 0;
+    }
+  }
+  .close-btn {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    z-index: 5;
+  }
+}
+
+.bg-grey {
+  background: #d0dbe6;
+}
+.bg-darkgrey {
+  background: #8aa6c0;
+}
