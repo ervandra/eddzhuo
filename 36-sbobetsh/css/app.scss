@@ -362,6 +362,9 @@ img {
     text-align: center;
     z-index: 5;
   }
+  @media only screen and (max-width: 600px) {
+    display: none !important;
+  }
 }
 
 .bg-grey {
