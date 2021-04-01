@@ -1,0 +1,356 @@
+:root {
+  --primary: #1569ae;
+  --darkPrimary: #002659;
+  --lightPrimary: #5384ad;
+  --active: #fdd247;
+}
+.container {
+  max-width: 1140px;
+}
+.blinkcolor {
+  -webkit-animation: blinkcolor 1s infinite ease;
+  animation: blinkcolor 1s infinite ease;
+}
+.bg-theme {
+  background: var(--primary);
+}
+.bg-theme-light {
+  background: var(--lightPrimary);
+}
+.btn-theme {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+.btn-theme:hover {
+  background: var(--darkPrimary);
+  border-color: var(--darkPrimary);
+}
+.btn-theme-light {
+  background: var(--lightPrimary);
+  border-color: var(--lightPrimary);
+}
+.btn-theme-light:hover {
+  background: var(--darkPrimary);
+  border-color: var(--darkPrimary);
+}
+.hover-opacity-50 {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.hover-opacity-50:hover {
+  opacity: 0.5;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blinkcolor {
+  0% {
+    background: red;
+  }
+  50% {
+    background: var(--primary);
+  }
+  100% {
+    background: red;
+  }
+}
+@keyframes blinkcolor {
+  0% {
+    background: red;
+  }
+  50% {
+    background: var(--primary);
+  }
+  100% {
+    background: red;
+  }
+}
+body {
+  color: #000;
+  background: var(--darkPrimary);
+  background: var(--darkPrimary) url(../images/bg.jpeg) repeat-y top center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.375rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.125rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+.button.alert {
+  color: #fff;
+}
+.button.alert:hover,
+.button.alert:focus {
+  color: #fff;
+}
+.button.success {
+  color: #fff;
+}
+.button.success:hover,
+.button.success:focus {
+  color: #fff;
+}
+.grid-container,
+hr {
+  max-width: 1080px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.slick-nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 30rem;
+  background: rgba(255, 255, 255, 0.3);
+  color: #333;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 93;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+  cursor: pointer;
+}
+.slick-nav:hover {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.slick-prev {
+  left: 2rem;
+  padding-right: 4px;
+}
+.slick-next {
+  right: 2rem;
+  padding-left: 4px;
+}
+.slide img {
+  width: 100%;
+}
+.top-header {
+  background: #000;
+}
+.top-notification {
+  background: #0274be;
+}
+.top-notification h6 {
+  background: rgba(0, 0, 0, 0.1);
+}
+.menu-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--darkPrimary)), to(var(--primary)));
+  background-image: linear-gradient(180deg, var(--darkPrimary) 0%, var(--primary) 100%);
+}
+#mainmenu ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#mainmenu ul li {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+#mainmenu ul li > a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+#mainmenu ul li.active > a,
+#mainmenu ul li:hover > a {
+  color: var(--active);
+  background: rgba(255, 255, 255, 0.1);
+}
+#mainmenu ul li.hot > a {
+  background: red;
+  padding: 0.5rem;
+  -webkit-animation: blinkcolor 1s infinite ease;
+  animation: blinkcolor 1s infinite ease;
+}
+#mainmenu ul li ul {
+  display: none;
+  position: absolute;
+  background: var(--darkPrimary);
+  z-index: 99;
+}
+#mainmenu ul li ul li > a {
+  padding: 0.5rem;
+  font-size: 75%;
+}
+#mainmenu ul li:hover > ul {
+  display: block;
+}
+#mainmenu.show {
+  display: block !important;
+}
+#mainmenu.show.collapse ul {
+  display: block;
+}
+#mainmenu.show.collapse ul ul {
+  display: none;
+}
+.news-item {
+  position: relative;
+}
+.news-item .news-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  padding: 1rem;
+  color: #fff;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.news-item .news-text p {
+  font-size: 0.875em;
+}
+.news-item:hover .news-text {
+  opacity: 1;
+}
+.footer-copyright {
+  background: #111;
+}
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.footer-menu li {
+  width: 100%;
+  display: block;
+  line-height: 1.8;
+  font-size: 0.9em;
+}
+.footer-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-menu.two-col li {
+  width: 50%;
+}
+.floating {
+  position: fixed;
+  top: 50vh;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.floating.floating-left {
+  left: -120px;
+  width: 120px;
+}
+.floating.floating-left.show {
+  left: 0;
+}
+.floating.floating-right {
+  right: -200px;
+  width: 200px;
+}
+.floating.floating-right.show {
+  right: 0;
+}
+.floating .close-btn {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  z-index: 5;
+}
+@media only screen and (max-width: 600px) {
+  .floating {
+    display: none !important;
+  }
+}
+.bg-grey {
+  background: #d0dbe6;
+}
+.bg-darkgrey {
+  background: #8aa6c0;
+}
+.product-item a {
+  text-decoration: none;
+}
